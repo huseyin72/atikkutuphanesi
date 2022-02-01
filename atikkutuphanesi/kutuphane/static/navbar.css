@@ -1,0 +1,149 @@
+
+  nav{
+     
+    
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    min-height:12vh;
+    background-color:#556B2F;
+    /* #FDDA0D */
+    
+  }
+  .logo{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:1.3rem;
+    display: flex;
+    justify-content: start;
+  }
+  img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50rem;
+    margin-right: 4rem;
+    
+}
+  .ul{
+    display:flex;
+    justify-content:space-around;
+    width: 35vw;
+    margin-left: 15rem;
+    
+  }
+  .ul a{
+    letter-spacing:3px;
+    font-weight:bold;
+    font-size:0.8rem;
+  }
+  .burger div{
+    background-color:#fff;
+    width:1.5rem;
+    height:3px;
+    margin:0.2rem;
+  }
+  .burger{
+    display:none;
+    cursor:pointer;
+  }
+  @media screen and (max-width:768px){
+    body{
+      overflow-x:hidden;
+      
+    }
+    .ul{
+      position:absolute;
+      right:0;
+      height:88vh;
+      top:12vh;
+      background-color:#556B2F;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      width:10rem;
+      transform:translateX(100%);
+      transition: transform 0.5s ease-in;
+      
+    }
+    .ul li{
+      opacity:0;
+    }
+    .burger{
+      display:block;
+    }
+  }
+  
+  .nav-activate{
+    transform: translateX(0%);
+  }
+  @keyframes navLinkFade{
+    from{
+      opacity:0;
+      
+      
+    }
+    to{
+      opacity:1;
+      
+      
+    }
+    
+  }
+  
+
+  .navDrop{
+    position:absolute;
+    width:100vw;
+    min-height:3rem;
+    background-color:	#b2beb5;
+    display:none;
+   
+    
+  }
+.navDropUl{
+   
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    
+    
+    
+  }
+.navDropUl li{
+    letter-spacing: 3px;
+    padding: 0px 30px;
+    padding-top:1rem;
+  }
+
+.atik:hover .navDrop{
+    background-color: red;
+    display: block;
+  }
+
+.toggle{
+    
+    display: block;
+}
+
+.liHoverBack{
+    text-decoration:underline;
+    
+}
+  
+.a{
+    font-size: 0.7rem;
+}
+.a1{
+  letter-spacing:3px;
+  font-weight:bold;
+  font-size:0.8rem;
+  
+}
+.toggle2{
+  display: none;
+}

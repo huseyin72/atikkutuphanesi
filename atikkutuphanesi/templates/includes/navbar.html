@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    {% load static %}
+        <link rel="stylesheet" href="{% static 'navbar.css' %}">
+        
+
+    <title>atık kütüphanesi</title>
+</head>
+
+<body>
+    <nav> 
+
+        <div class="logo">
+            <img src="{% static 'imgs/logo.png' %}" alt="">
+            <h4>atık kütüphanesi</h4>
+        </div>
+        <ul class="ul">
+            <li><a  class="a1" href="/">anasayfa</a></li>
+            <div  style="margin: 0px;" class="atik"><li ><a class="a1" href="#">Atık listesi</a></li></div>
+            <li><a class="a1" href="/works">projeler</a></li>
+            <li><a class="a1" href="">hakkımızda</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="navDrop">
+        <ul class="navDropUl">
+           <!--  <li><a href="">atık</a></li>
+            <li><a href="">atık</a></li>
+            <li><a href="">atık</a></li>
+            <li><a href="">atık</a></li>
+            <li><a href="">atık</a></li>
+            <li><a href="">atık</a></li>
+            <li><a href="">atık</a></li>
+            <li><a href="">atık</a></li>
+            <li><a href="">atık</a></li> -->
+        </ul>
+    </div>
+    
+
+    
+
+    <script src="{% static 'js/navbar.js' %}"></script>
+</body>
+
+</html>
