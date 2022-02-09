@@ -1,0 +1,47 @@
+.sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.atiksection{
+    height: 80vh;
+    width: 90vw;
+    background-color: #F8F8F8;
+    margin: 1rem;
+    padding: 3rem;
+}
+.titlesection{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.sectionImg{
+    height: 10rem;
+    width: 10rem;
+}
+.middlesection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.theLastCodes{
+    background-color: #E8E8E8;
+    border-radius: 2rem;
+}
+.theLastCodes .theLastCodesUl{
+    margin: 2rem;
+}
+.theLastCodes .theLastCodesUl li{
+    margin: 1rem;
+
+}
+.contentOfSection{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}

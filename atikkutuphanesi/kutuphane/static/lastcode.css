@@ -1,0 +1,13 @@
+.mainMain{
+    display: flex;
+    justify-content: center;
+}
+.mainOfLastCode{
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F8F8F8;
+}

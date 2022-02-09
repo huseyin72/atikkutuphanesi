@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'lastcode.css' %}">
+
+<div class="mainMain">
+    <div class="mainOfLastCode">
+        <h1 class="atikTitle">{{atikcode.atikname}}</h1>
+    <ul class="atikFeatures">
+        <li>{{atikcode.atik_features}}</li>
+        <li>{{atikcode.where_to_go}}</li>
+        <li>{{atikcode.atik_advice}}</li>
+        <li>{{atikcode.klavuz}}</li>
+    </ul>
+    </div>
+</div>
+    
+{% endblock body %}
+   

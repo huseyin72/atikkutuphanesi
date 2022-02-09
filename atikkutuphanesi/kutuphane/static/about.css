@@ -1,0 +1,37 @@
+
+
+  .aboutStitle{
+      display: flex;
+      justify-content: space-around;
+      color:rgb(83, 78, 78);
+    
+    }
+    .aboutStitle h1{
+        color:rgb(83, 78, 78);
+    }
+
+  .aboutlogo{
+      height: 3rem;
+      width: auto;
+
+  }
+  .contentAbout{
+    color:rgb(83, 78, 78);
+
+      padding: 1rem;
+      background-color: #F8F8F8;
+      display: flex;
+      justify-content: center;
+      margin: 3rem 10rem;
+  }
+  .titleAbout{
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      color:rgb(83, 78, 78);
+  }
+  .titleAbout h2{
+    color:rgb(83, 78, 78);
+
+  }

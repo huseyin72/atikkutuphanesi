@@ -2,6 +2,7 @@ const drop = document.querySelector(".atik");
 const navDrop = document.querySelector(".navDrop");
 const li1 = document.querySelector(".li1");
 var atikList = ["Tehlikeli atık" , "Tıbbi atık",  "Ambalaj atıkları", "Atık yağ" , "Atık pil ve akü" , "Atık elektrikli elektronik ekipmanlar" , "Bitkisel atık yağ" , "Biyobozunur atık" , "Atık lastik"];
+var atikhref = ["/atiklist#dangerAtik","/sectionpart/atiklist.html#tibbiatik","/sectionpart/atiklist.html#ambalajatik","/sectionpart/atiklist.html#yağatik","/sectionpart/atiklist.html#pilatik","/sectionpart/atiklist.html#elektronikatik","/sectionpart/atiklist.html#bitkiselatik","/sectionpart/atiklist.html#biyobozunuratik","/sectionpart/atiklist.html#lastikatik"]
 const ul = document.querySelector(".navDropUl");
 const a1 = document.querySelectorAll(".a1");
 
@@ -9,10 +10,10 @@ const ul2 = document.querySelector(".ul");
 
 // atık listesi
 function atikAdd(){
-    atikList.forEach(function(item){
+    atikList.forEach(function(item, index){
         const newLi = document.createElement("li");
         const a = document.createElement("a");
-        a.setAttribute("href","#")
+        a.setAttribute("href",atikhref[index]);
         a.innerText=item;
         a.classList="a";
         newLi.appendChild(a);
@@ -45,7 +46,7 @@ const navSlide = () =>{
       
   };
  
-  console.log(drop.style)
+ /*  console.log(drop.style)
   
   
   // about hove
@@ -60,8 +61,9 @@ function hoverFunc(drom){
     })
    
     
-}
-function textDecoration(item){
+} */
+
+/* function textDecoration(item){
     item.addEventListener("click",function(e){
         a1.forEach(function(remove){
             remove.classList.remove("liHoverBack");
@@ -78,9 +80,9 @@ function textDecoration(item){
 
 
     });
-}
+} */
 
 atikAdd();
 navSlide();
-hoverFunc();
-textDecoration(ul2)
+/* hoverFunc();
+textDecoration(ul2) */

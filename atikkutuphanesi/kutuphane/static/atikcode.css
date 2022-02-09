@@ -1,0 +1,203 @@
+.homeform{
+    overflow-x: hidden;
+
+}
+ 
+.atikcode{
+    font-size: 3rem;
+    color:rgb(48, 33, 33);
+    margin-left: 2rem;
+    /* margin: 1rem;
+    margin-top: 3rem; */
+    
+}
+.titlehomepage img{
+    width: 30vw;
+    height: auto;
+    
+
+
+}
+
+
+.formDiv h5{
+    color:rgb(29, 27, 27);
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+.titlehomepage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+.formDiv{
+    flex: 5;
+    min-height:70vh ;
+    /* border: 1px solid rgb(36, 34, 34) ; */
+    border-radius: 3rem;
+    padding-right: 3rem;
+   
+    
+}
+#form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    justify-content: space-around;
+}
+#form #button1{
+    
+    padding: 5px;
+    width: auto;
+    min-height: 6rem;
+    background-color: #eecb05;
+    border: 0px solid black;
+    border-radius: 1rem;
+    cursor:pointer;
+    
+}
+#button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0.8;
+}
+#form #button1:hover{
+    background-color: #fff;
+    font-size: 1.3rem;
+    color:rgb(255, 255, 255);
+}
+.buttonWithDrop{
+    cursor: default;
+}
+/* #form button:hover{
+   background-color: #fff;
+   color: black;
+} */
+.button-main{
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 1rem;
+}
+.block{
+    
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border:3px solid #F5F5F5;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
+    position: absolute;
+    top:6rem;
+    z-index: 10;
+    background-color: #F5F5F5;
+    display: none
+    ;
+}
+.block a{
+    margin: 3px;
+    width: 80%;
+    padding: 3px;
+    color: black;  
+    
+}
+.block a:hover{
+    color: #eecb05;
+}
+.button-main:hover .block{
+    display: flex;
+}
+
+    
+ 
+
+
+/* drop down part ************************************************* */
+@media screen and (max-width:850px){
+    .containerMain{
+        flex-direction: column;
+    }
+    .formDiv{
+        margin: 5rem;
+    }
+}
+.containerMain{
+    overflow-x: hidden;
+
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    
+}
+.dropPart{
+
+    overflow-x: hidden;
+    
+    flex: 7;
+    
+    margin-left: 1rem;
+    height: 60rem;
+   
+    
+   
+}
+.dropTitle{
+    display: flex;
+    justify-content: center;
+}
+.dropTitle h3{
+    margin-top: 1rem;
+    color:rgb(29, 27, 27);
+    font-size: 1.6rem;
+
+    
+}
+.dropselect{
+    width: 80%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    color: rgb(15, 13, 13);
+}
+
+.codes{
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+}
+.codeUl{
+    list-style-type: circle;
+}
+.lastCodes{
+    background-color: #F0F0F0;
+    width: 80%;
+}
+.codeUl li{
+    
+   
+    padding: 0.2rem;
+    margin: 0.3rem;
+    width: 70%;
+
+}
+
+.codeUl li a{
+    color: black;
+    text-decoration: underline;
+}
