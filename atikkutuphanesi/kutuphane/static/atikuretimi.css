@@ -1,0 +1,28 @@
+.mainOfAU{
+   
+    display: flex;
+    justify-content: center;
+   /*  align-items: center; */
+    height: 100vh;
+    width: 100vw;
+}
+.atikUretimiMain{
+    background-color:#F5F5F5;
+    padding: 1rem;
+    
+
+}
+
+.titleAtikUretimi{
+    /* padding: 2rem; */
+    padding: 2rem 0rem;
+}
+.contentOfIt{
+    margin-bottom: 2rem;
+}
+.titleAtikUretimi hr{
+    width: 80vw;
+}
+.contentOfIt{
+    margin-left: 3rem;
+}

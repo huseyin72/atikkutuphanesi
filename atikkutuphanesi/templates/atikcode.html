@@ -5,12 +5,84 @@
 
 <div class="mainMain">
     <div class="mainOfLastCode">
-        <h1 class="atikTitle">{{atikcode.atikname}}</h1>
+        <div class="itsType">tıbbi atık</div>
+        <h1>baslık</h1>
+        <div class="atikKind">
+            <div class="typeOne"></div>
+            <div class="typeTwo"></div>
+            <div class="typeThree"></div>
+        </div>
+        <div class="warning">DİKKAT!</div>
+        <div class="symbol">
+            <div class="symbolPhoto">
+                <img class="tehlike"src="{% static 'imgs/tehlike.png' %}" alt="" srcset="">
+            </div>
+            <div class="contentOfSymbol">
+                Bu başlık altındaki atıkların kesici ve delici özelliği nedeniyle; atığı atan, toplayan, taşıyan, atık yönetimi işinde görev alan, atıkla ilişkili alanların temizliğinde çalışan vd. personelin yaralanmasına yol açması muhtemeldir. 
+            </div>
+        </div>
+        <div class="whereAccurs">
+            <h2 class="whereAccursTitle">Bu koda sahip atıklar nerede oluşur ?  </h2>
+            <p>Bu koda sahip atıklar sadece insan sağlığı ile ilgili hizmetlerde oluşur.
+                Hastaneler başta olmak üzere, revirler, diyaliz merkezi, fizik tedavi merkezi, poliklinik, kan merkezi, acil müdahale birimleri, mikrobiyoloji laboratuvarları, diş hekimliği vb. özel klinikler, insan sağlığına yönelik araştırmalar yapan kuruluşlar, dövme salonları, akupunktur merkezleri.
+                </p>
+        </div>
+        <div class="howDefined">
+            <h2 class="howDefinedTitle">Bu koda sahip atıkları nasıl tanımlarız ? </h2>
+            <p>Her türlü girişim iğnesi; enjeksiyon, damar yolu açma, dövme, akupunktur vb. işlemlerde kullanılan iğneler, laboratuvarlarda içerisinde numune bulunan cam, metal, sert plastik, kompozit malzemenin kırılması durumunda oluşan kırık malzemeler, lam-lamel benzeri sivri uçlu malzemelerin atıkları, her türlü kesik atma malzemeleri, kesici aletler.</p>
+        </div>
+        <div class="whichLegislation">
+            <h2>Bu atık hangi mevzuat ile ilişkilidir ? </h2>
+            <li class="legislationlist">
+                <ul>Atık Yönetimi Yönetmeliği (Resmi Gazete 29314, 02.04.2015)</ul>
+                <ul>Tıbbi Atıkların Kontrolü Yönetmeliği (Resmi Gazete 29959, 25.01.2017)</ul>
+            </li>
+
+        </div>
+        <!-- tabloyu gir  -->
+        <div class="howToReduce">
+            <h2>Bu atık nasıl kaynağında azaltılabilir ?</h2>
+            <p>Kesici-delici nitelikteki atıkların daha az oluşması için uygulanabilecek en basit yöntem, öncelikle çalışma alanının temiz ve düzenli tutulmasıdır. Bu sayede sağlık hizmetlerinde kullanılan malzemelerin kırılıp parçalanması sonucunda oluşabilecek kesici-delici atık miktarı önlenebilir.   
+                Kesici-delici atık kutuları sadece görevli personelin erişimine uygun yerlerde bulundurulmalıdır. Bu tür atıklara özel kutuların içerisine başka bir atık atılmamalıdır.
+                </p>
+
+        </div>
+        <div class="howToCollect">
+            <h2>Bu atık oluştuğu yerde nasıl biriktirilmelidir ?</h2>
+            <p>Kesici-delici atıklar delinmeye, yırtılmaya, kırılmaya ve patlamaya dayanıklı, su geçirmez ve sızdırmaz, açılması ve karıştırılması mümkün olmayan, üzerinde siyah renkli “Uluslararası Biyotehlike” amblemi ile siyah harflerle yazılmış “DİKKAT! KESİCİ ve DELİCİ TIBBİ ATIK” ibaresi taşıyan plastik veya aynı özelliklere sahip lamine kartondan yapılmış kutu veya konteynerda biriktirilmelidir.</p>
+        </div>
+        <div class="secondPhoto">
+            <img class="tehlike"src="{% static 'imgs/tehlike2.jpg' %}" alt="" srcset="">
+            
+            <p>Bu atıkların toplanması, taşınması vb. yönetiminden sorumlu personelin, atık kaynaklı enfeksiyona maruziyetini önleyecek eldiven, çizme, maske, gözlük, tulum vb. kişisel koruyucu donanım kullanması zorunludur.
+                <br> <br>
+
+                Bu atıkların biriktirildiği, taşındığı, geçici depolandığı kap/konteynır/alanların biyolojik tehlike sembolü işareti taşıması zorunludur.
+                </p>
+            
+        </div>
+        <div class="howToTrasport">
+            <h2>Bu atık; atık tesisine nasıl taşınmalıdır ?</h2>
+            <ul class="companyListTransport">
+                <li><a href="">Lisanslı taşıma firmaları listesi</a></li>
+            </ul>
+        </div>
+        <div class="whereGo">
+            <h2>Bu atık; atık tesisine nasıl taşınmalıdır ?</h2>
+            <ul class="companyListWhereGo">
+                <li><a href="">Lisanslı taşıma firmaları listesi</a></li>
+            </ul>
+        </div>
+
+
+     
+
+        {% comment %} <h1 class="atikTitle">{{atikcode.atikname}}</h1> {% endcomment %}
     <ul class="atikFeatures">
-        <li>{{atikcode.atik_features}}</li>
+       {% comment %}  <li>{{atikcode.atik_features}}</li>
         <li>{{atikcode.where_to_go}}</li>
         <li>{{atikcode.atik_advice}}</li>
-        <li>{{atikcode.klavuz}}</li>
+        <li>{{atikcode.klavuz}}</li> {% endcomment %}
     </ul>
     </div>
 </div>

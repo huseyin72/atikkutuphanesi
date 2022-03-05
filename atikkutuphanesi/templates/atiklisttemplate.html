@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'atiklisttemplate.css' %}">
+   <div class="mainAtikList">
+     <div class="mainOfAtiklist">
+          <div class="mainTitle"><h1 class="marginClass">TIBBİ ATIK</h1></div>
+          <div class="whatIsIt marginClass">
+               <h1>Tıbbi Atık Nedir?</h1>
+               <p>Tıbbi atıklar sağlık hizmeti verilen, sağlık hizmetlerine yönelik araştırmalar yapılan yerler veya dövme, akupunktur gibi hijyenik hizmetler sunan yerlerde oluşan kesici-delici, patolojik ve/veya enfeksiyon yapıcı atıklardır</p>
+
+          </div>
+          <div class="whyImportant marginClass">
+               <h1>Tıbbi Atıklar Neden Önemlidir?</h1>
+               <p>Tıbbi atıklar, eğer doğru yönetilmez ise, insanlara ve hayvanlara hastalık bulaşmasına ve salgınlara yol açabilir</p>
+
+          </div>
+          <div class="whereAccurs marginClass">
+               <h1>Tıbbi Atıklar Nerelerde Oluşur?</h1>
+               <p>İnsan ve hayvan sağlığına yönelik hizmet veren servisler; hastaneler başta olmak üzere, revirler, diyaliz merkezi, fizik tedavi merkezi, poliklinik, kan merkezi, acil müdahale birimleri, mikrobiyoloji laboratuvarları, diş hekimliği, veteriner klinikleri vb. özel klinikler, insan ve hayvan sağlığına yönelik araştırmalar yapan kuruluşlar (üniversiteler, laboratuvarlar, araştırma merkezleri), dövme salonları, akupunktur merkezlerinde oluşur</p>
+          </div>
+          <div class="howToUndrstand marginClass">
+               <h1>Atığın tıbbi atık olup olmadığını nasıl anlarım?</h1>
+               <p>Öncelikle atığın insan veya hayvan sağlığına müdahale amacıyla ve/veya bu amaca yönelik bir tanı, teşhis, tedavi, araştırma vb. süreç esnasında mı oluştuğunu dikkate almalısınız. 
+                    Atık herhangi bir sağlık hizmeti verilmesi (dövme ve akupunktur gibi kan ile temas içeren müdahaleler de dahildir) veya buna yönelik bir araştırma esnasında oluşmamışsa tıbbi atık değildir.
+                    Atık kaynağı teyit edildikten sonra atığın kesici-delici özellikte olup olmadığına bakılabilir. Atık, kesici-delici bir özellik taşıyor ise tıbbi atıktır. Atık, içerisinde herhangi bir kimyasal işlem görmemiş patolojik ögeler barındırıyor ise (doku-organ parçaları, fetüs vb.) tıbbi atıktır. Son olarak atık, enfeksiyon yapıcı etkenleri taşıdığı bilinen veya taşıması muhtemel maddeleri içeriyor ise veya bu maddeler ile bulaşmış ise yine tıbbi atıktır. 
+                    </p>
+          </div>
+          <div class="tableOfIt marginClass">
+               <div class="firstStep">18 İnsan ve hayvan sağlığı ve/veya bu konulardaki araştırmalardan kaynaklanan atıklar (doğrudan sağlığa ilişkin olmayan mutfak ve restoran atıkları hariç)</div>
+               <div class="secondStepContainer">
+                    <div>18 01 İnsanlarda Doğum, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalarından Kaynaklanan Atıklar</div>
+                    <div>18 02 Hayvanlarla İlgili Araştırma, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalarından Kaynaklanan Atıklar</div>
+
+               </div>
+               <div class="lastStep">
+                    <div>
+                         <ul>
+                              <li><a href="http://127.0.0.1:8000/atikkod/1">18 01 01 - Kesiciler (18 01 03 hariç)</a></li>
+                              <hr>
+                              <li><a href="">18 01 02 - Kan torbaları ve kan yedekleri dahil vücut parçaları ve organları (18 01 03 hariç)</a></li>
+                              <hr>
+                              <li><a href="">18 01 03* - Enfeksiyonu önlemek amacı ile toplanmaları ve bertarafı özel işleme tabi olan atıklar</a></li>
+                                   
+                                   
+                         </ul>
+
+                    </div>
+                    <div>
+                         <ul>
+                              <li><a href="">18 02 01 - Kesiciler (18 02 02 hariç)</a></li>
+                              <hr>
+                              <li> <a href="">18 02 02* - Enfeksiyonu önlemek amacı ile toplanmaları ve bertarafı özel işleme tabi olan atıklar</a></li>
+                              
+                         </ul>
+
+                    </div>
+               </div>
+          </div>
+          <!-- burda kaldım -->
+     </div>
+   </div>
+     
+{% endblock body %} 

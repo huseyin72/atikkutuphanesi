@@ -1,8 +1,8 @@
-const drop = document.querySelector(".atik");
-const navDrop = document.querySelector(".navDrop");
-const li1 = document.querySelector(".li1");
-var atikList = ["Tehlikeli atık" , "Tıbbi atık",  "Ambalaj atıkları", "Atık yağ" , "Atık pil ve akü" , "Atık elektrikli elektronik ekipmanlar" , "Bitkisel atık yağ" , "Biyobozunur atık" , "Atık lastik"];
-var atikhref = ["/atiklist#dangerAtik","/sectionpart/atiklist.html#tibbiatik","/sectionpart/atiklist.html#ambalajatik","/sectionpart/atiklist.html#yağatik","/sectionpart/atiklist.html#pilatik","/sectionpart/atiklist.html#elektronikatik","/sectionpart/atiklist.html#bitkiselatik","/sectionpart/atiklist.html#biyobozunuratik","/sectionpart/atiklist.html#lastikatik"]
+/* const drop = document.querySelector(".atik"); */
+/* const navDrop = document.querySelector(".navDrop"); */
+/* const li1 = document.querySelector(".li1"); */
+var atikList = ["Atık pil ve akü" , "Atık yağ",  "Ambalaj atıkları", "Atık lastik" , "Tehlikeli atık" , "Biyobozunur atık" , "Bitkisel atık yağ" , "Atık elektrikli elektronik aletler" , "Tıbbi atık"];
+var atikhref = ["/atiklist#atikpil","/atiklist#atikyag","/sectionpart/atiklist.html#ambalajatik","/sectionpart/atiklist.html#yağatik","/sectionpart/atiklist.html#pilatik","/sectionpart/atiklist.html#elektronikatik","/sectionpart/atiklist.html#bitkiselatik","/sectionpart/atiklist.html#biyobozunuratik","http://127.0.0.1:8000/atiklist/tibbiatik"]
 const ul = document.querySelector(".navDropUl");
 const a1 = document.querySelectorAll(".a1");
 
@@ -14,8 +14,8 @@ function atikAdd(){
         const newLi = document.createElement("li");
         const a = document.createElement("a");
         a.setAttribute("href",atikhref[index]);
+        a.setAttribute("class","atiklist");
         a.innerText=item;
-        a.classList="a";
         newLi.appendChild(a);
         ul.appendChild(newLi);
         
@@ -23,10 +23,26 @@ function atikAdd(){
     })
 }
 
+// burger butonu 
+const burger = document.querySelector(".burger");
+const navDrop = document.querySelector(".navDrop");
+burger.addEventListener("click", function(){
+    console.log("burger worked");
+    navDrop.classList.toggle("toggle");
+
+
+})
+navSlide = () =>{
+    
+    
+
+};
+
+
 
 
 //responsive taşıma 
-const navSlide = () =>{
+/* const navSlide = () =>{
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".ul");
     const navLinks = document.querySelectorAll(".ul li");
@@ -45,7 +61,7 @@ const navSlide = () =>{
     
       
   };
- 
+  */
  /*  console.log(drop.style)
   
   
@@ -81,8 +97,8 @@ function hoverFunc(drom){
 
     });
 } */
-
-atikAdd();
 navSlide();
+atikAdd();
+/* navSlide(); */
 /* hoverFunc();
 textDecoration(ul2) */

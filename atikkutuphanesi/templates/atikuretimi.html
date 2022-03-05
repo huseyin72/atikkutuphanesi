@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block body %}
+{% load static %}
+        <link rel="stylesheet" href="{% static 'atikuretimi.css' %}">
+<div class="mainOfAU">
+    <div class="atikUretimiMain">
+        <div class="titleAtikUretimi">
+            <h1>{{obje.atikName}}</h1>
+            <hr>
+            
+
+
+    
+        </div>
+        <div class="middleAtikUretimi">
+            <div class="contentOfIt">
+                <p>{{obje.prosesFeatures}}</p>
+                
+
+            </div>
+
+            <h3>proses kaynaklı atıklar</h3>
+            <hr>
+            <ul class="mainCodes">
+                {% for i in kodlar  %}
+                    <li><a href="">{{i}}</a></li>
+            
+                {% endfor %}
+
+            </ul>
+            <h3>oluşabilecek diğer atıklar</h3>
+            <hr>
+            <ul class="otherCodes">
+                {% for i in kodlar  %}
+                    <li>{{i}}</li>
+            
+                {% endfor %}
+
+            </ul>
+
+
+            
+
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+{% endblock body %} 

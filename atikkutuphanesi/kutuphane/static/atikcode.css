@@ -59,10 +59,11 @@
     padding: 5px;
     width: auto;
     min-height: 6rem;
-    background-color: #eecb05;
-    border: 0px solid black;
+    /* background-color: #eecb05;
+    border: 0px solid black; */
     border-radius: 1rem;
     cursor:pointer;
+    font-size: 1.2rem;
     
 }
 #button1{
@@ -71,6 +72,7 @@
     align-items: center;
     color: #fff;
     opacity: 0.8;
+   
 }
 #form #button1:hover{
     background-color: #fff;
@@ -199,5 +201,11 @@
 
 .codeUl li a{
     color: black;
+    
+    
+
+}
+.codeUl li a:hover{
     text-decoration: underline;
+
 }

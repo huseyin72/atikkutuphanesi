@@ -1,47 +1,75 @@
-.sections{
+.sectionMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    align-items: center;
+    
+}
+.sectionBlocks{
+    min-height: 80vh;
+    max-width: 80vw;
+    background-color:#F5F5F5;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+#atikpil{
+    margin-top: 10rem;
+}
+.atikListEnd{
+    max-width: 100%;
+}
+.buttonsAl{
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
+    
 }
-.atiksection{
-    height: 80vh;
-    width: 90vw;
-    background-color: #F8F8F8;
-    margin: 1rem;
-    padding: 3rem;
-}
-.titlesection{
+.buttonAl{
+    font-size: 0.9rem;
+    color: #fff;
+    width: 100%;
+    height: 2rem;
+    margin: 1rem 2rem;
+    background-color:rgb(93, 116, 116);
+    cursor: pointer; 
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
-}
-.sectionImg{
-    height: 10rem;
-    width: 10rem;
-}
-.middlesection{
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 1.5rem;
+
+
+
 }
-.theLastCodes{
-    background-color: #E8E8E8;
-    border-radius: 2rem;
+.buttonAlAfter{
+    background-color: #fff;
+    color: black;
+    font-size: 1.1rem;
+
 }
-.theLastCodes .theLastCodesUl{
+.codeAl{
+    padding: 1rem;
+    margin-top: 1rem;
+    min-height: 5rem;
+    width: 97%;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+.codeAl li{
+    margin: 0.8rem;
+}
+.atikListTitle{
+    margin: 2rem ;
+}
+
+.titleEnd{
     margin: 2rem;
-}
-.theLastCodes .theLastCodesUl li{
-    margin: 1rem;
-
-}
-.contentOfSection{
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    margin-bottom: 2rem;
-
 }

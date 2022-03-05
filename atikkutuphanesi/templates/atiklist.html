@@ -1,176 +1,341 @@
 {% extends "layout.html" %}
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 {% block body %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'atiklist.css' %}">
-     <div class="sectionPart">
-        <div class="sections">
-           
-            <section id="dangerAtik" class="atiksection">
-                <div class="titlesection">
-                    <h1>Tehlikeli atık</h1>
-                </div>
-                <div class="middlesection">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto temporibus quia provident, corporis laboriosam quisquam similique accusamus, recusandae ducimus totam iure, ex odio dignissimos. Quam odit necessitatibus repudiandae error, illum cupiditate eum sed quos amet excepturi consequatur fuga sint provident ullam, exercitationem tenetur dicta sit voluptatum earum perferendis ratione nisi tempora eaque. Iusto, assumenda quis provident amet quidem fugit reiciendis voluptate ducimus odio tempora, vel nobis similique in, dicta rem aspernatur? Nemo deserunt labore quod earum corrupti, totam quisquam dolores nulla iste sed id suscipit, libero, reiciendis eaque? Aut fugit harum cupiditate. Aliquam expedita vitae qui id dolorum commodi molestias.
-                </div>
-            </section>
-            <section id="tibbiatik" class="atiksection">
-                <div class="titlesection">
-                    <h1>Tıbbi atık </h1>
-                </div>
-                <div class="middlesection">
-                    <div class="contentOfSection">
-                        <img src="../imgs/SDG Wheel_WEB.png" alt="" class="sectionImg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium ducimus aperiam illum quia error magnam veritatis quaerat neque facere.</p>
-                    </div>
+<!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> -->
 
-                    <div class="theLastCodes">
-                        <ul class="theLastCodesUl">
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="ambalajatik" class="atiksection">
-                <div class="titlesection">
-                    <h1>Ambalaj atıkları</h1>
-                </div>
-                <div class="middlesection">
-                    <div class="contentOfSection">
-                        <img src="../imgs/SDG Wheel_WEB.png" alt="" class="sectionImg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium ducimus aperiam illum quia error magnam veritatis quaerat neque facere.</p>
-                    </div>
+ <div class="sectionMain">
+     <!-- *****************************pil atik************************ -->
+        <div data-aos="fade-up" class="sectionBlocks">
+            <div class="atikListTitle">
+                <h1 class="titleAL">ATIK PİL VE AKÜ</h1>
+            </div>
 
-                    <div class="theLastCodes">
-                        <ul class="theLastCodesUl">
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="yağatik" class="atiksection">
-                <div class="titlesection">
-                    <h1>Yağ atıkları</h1>
-                </div>
-                <div class="middlesection">
-                    <div class="contentOfSection">
-                        <img src="../imgs/SDG Wheel_WEB.png" alt="" class="sectionImg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium ducimus aperiam illum quia error magnam veritatis quaerat neque facere.</p>
-                    </div>
+            <div class="atikListMidle">
+                <h3 class="middleTitle">Atık Pil Nedir?</h3>
+                <p>
+                    Atık pil ve akümülatör, yeniden kullanılabilecek durumda olmayan, evsel atıklardan ayrı olarak toplanması, taşınması ve bertaraf edilmesi gereken kullanılmış pil ve akümülatörler olarak tanımlanmaktadır (Atık Pil ve Akümülatörlerin Kontrolü Yönetmeliği, 2004).  <br> <br>
+	Atık piller, evsel atıklardan ayrı toplanmalıdır. Bu pillerin tümü, kullanım ömürlerinin sonunda uygun şekilde toplanıp geri dönüştürülmez, bu da tehlikeli maddelerin açığa çıkma riskini artırır ve kaynak israfı oluşturur. Pillerin ve akümülatörlerin bileşenlerinin çoğu geri dönüştürülebilir, böylece çevreye tehlikeli madde salınımı önlenebilir, ve ayrıca ürünlere ve üretim süreçlerine değerli malzemeler sağlanabilir. <br><br>
+	Aşağıdaki tabloda, muhtemel atık pil ve akümülatör listesi ve atık kodları verilmiştir. <br>
 
-                    <div class="theLastCodes">
-                        <ul class="theLastCodesUl">
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                        </ul>
-                    </div>
+                </p>
+            </div>
+            <div class="atikListEnd">
+               <div class="titleEnd"> <h3>İNSAN VE HAYVAN SAĞLIĞI VE/VEYA BU KONULARDAKI ARAŞTIRMALARDAN KAYNAKLANAN ATIKLAR (DOĞRUDAN SAĞLIĞA İLİŞKİN OLMAYAN MUTFAK VE RESTORAN ATIKLARI HARİÇ)</h3>
+                <hr></div>
+                <div class="buttonsAl">
+                    <div class="button1Al buttonAl buttonAlAfter " id="1">Piller ve Akümülatörler <i style="background-color:white; color:black;" class="fa-solid fa-sort-down"></i></div>
+                    <ul class="codeAl" id="ul1">
+                    
+                    </ul>
+                    <div class="button2Al buttonAl " id="2">Ayrı Toplanan Fraksiyonlar (15 01 Hariç)</div>
+                    <ul class="codeAl" id="ul2">
+                    
+                    </ul>
                 </div>
-            </section>
-            <section id="pilatik" class="atiksection">
-                <div class="titlesection">
-                    <h1>Atık pil ve akü</h1>
-                </div>
-                <div class="middlesection">
-                    <div class="contentOfSection">
-                        <img src="../imgs/SDG Wheel_WEB.png" alt="" class="sectionImg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium ducimus aperiam illum quia error magnam veritatis quaerat neque facere.</p>
-                    </div>
-
-                    <div class="theLastCodes">
-                        <ul class="theLastCodesUl">
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="elektronikatik" class="atiksection">
-                <div class="titlesection">
-                    <h1>Atık elektrikli elektronik atıklar</h1>
-                </div>
-                <div class="middlesection">
-                    <div class="contentOfSection">
-                        <img src="../imgs/SDG Wheel_WEB.png" alt="" class="sectionImg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium ducimus aperiam illum quia error magnam veritatis quaerat neque facere.</p>
-                    </div>
-
-                    <div class="theLastCodes">
-                        <ul class="theLastCodesUl">
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="bitkiselatik" class="atiksection">
-                <div class="titlesection">
-                    <h1>Bitkisel atık yağ</h1>
-                </div>
-                <div class="middlesection">
-                    <div class="contentOfSection">
-                        <img src="../imgs/SDG Wheel_WEB.png" alt="" class="sectionImg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium ducimus aperiam illum quia error magnam veritatis quaerat neque facere.</p>
-                    </div>
-
-                    <div class="theLastCodes">
-                        <ul class="theLastCodesUl">
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="biyobozunuratik" class="atiksection">
-                <div class="titlesection">
-                    <h1>Biyobozunur atık</h1>
-                </div>
-                <div class="middlesection">
-                    <div class="contentOfSection">
-                        <img src="../imgs/SDG Wheel_WEB.png" alt="" class="sectionImg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium ducimus aperiam illum quia error magnam veritatis quaerat neque facere.</p>
-                    </div>
-
-                    <div class="theLastCodes">
-                        <ul class="theLastCodesUl">
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="lastikatik" class="atiksection">
-                <div class="titlesection">
-                    <h1>Atık lastik</h1>
-                </div>
-                <div class="middlesection">
-                    <div class="contentOfSection">
-                        <img src="../imgs/SDG Wheel_WEB.png" alt="" class="sectionImg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laudantium ducimus aperiam illum quia error magnam veritatis quaerat neque facere.</p>
-                    </div>
-
-                    <div class="theLastCodes">
-                        <ul class="theLastCodesUl">
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                            <li><a href="">dfgffdgdf</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+                
+            </div>
+               
             
-
+            
         </div>
-        
+       <!-- ********************atık yağ **************************** -->
+        <div data-aos="fade-up" class="sectionBlocks">
+            <div class="atikListTitle">
+                <h1 class="titleAL">ATIK YAĞ</h1>
+            </div>
 
+            <div class="atikListMidle">
+                <h3 class="middleTitle">Atık Yağ Nedir?</h3>
+                <p>
+                    Atık yağ orijinal kullanım amacına uygun olmayan ve Atık Yağların Yönetimi Yönetmeliği Ek-1’de atık kodları yer alan madeni yağlardır (Atık Yağların Yönetimi Yönetmeliği, 2019). <br><br> 
+	Birçok motor ve mekanizmanın çalışması için madeni yağlara ihtiyaç vardır. Bu yağların yaklaşık yarısı atık yağ olacaktır. Gerisi kullanım sırasında veya sızıntı yoluyla kaybolur. Oluşan atık madeni yağların tümü tehlikeli atık olarak nitelendirilmektedir ve buna göre uygun yönetim metodu seçilmelidir. Aynı zamanda, atık madeni yağların depolandığı ambalajlar da tehlikeli atık olarak yönetilmelidir. <br> <br>
+	Bahsedildiği gibi, atık yağların toprak, kanalizasyon, denizler gibi alıcı ortamlara verilmesi, yakıt olarak kullanılması, uygun olmayan yöntemler ile geri kazandırılması, yakılması veya bertarafı yasaktır. Madeni atık yağlar, diğer atık yağlardan ayrı toplanmalıdır ve “tehlikeli atık geçici depolama” alanında biriktirilmelidir. <br> <br>
+    Atık yağlar kullanıldıktan sonra toplanabilir, geri kazandırılabilir ve tekrar tekrar kullanılabilir. Geri kazandırılan yağ, aynı amaç için kullanıldığı gibi farklı bir amaç için de kullanılması muhtemeldir. İlk olarak, atık yağ yerinde yenilenebillir. Kullanılmış yağdaki kirlilikler temizlenir ve yeniden kullanılabilir. Bu şekilde yağ orijinal durumuna dönmese bile ömrü uzatılır. Diğer bir seçenek olarak yeniden rafine edilebilir. Bu yöntem sayesinde petrol kaynağının ömrü süresiz olarak uzar. Bu geri dönüşüm biçimi tercih edilen seçenektir, çünkü başladığı zamanki aynı ürünü yapmak için yağı yeniden kullanarak geri dönüşüm döngüsünü kapatır ve bu nedenle daha az enerji ve daha az saf yağ kullanır. Son olarak ise enerji eldesi için işlenir ve yakılır. İşlenme Kullanılmış yağın ısı üretmek veya endüstriyel operasyonlara güç sağlamak için yakıt olarak yakılabilmesi için su ve partiküllerin uzaklaştırılmasını içerir. <br> <br>
+    <strong>Atık Yağların Yönetimi Yönetmeli Ek-1’e göre yer alan atık yağların tablosu aşağıda verilmiştir.</strong> <br>
+
+                </p>
+            </div>
+            <div class="atikListEnd">
+               <div class="titleEnd"> <h3>İNSAN VE HAYVAN SAĞLIĞI VE/VEYA BU KONULARDAKI ARAŞTIRMALARDAN KAYNAKLANAN ATIKLAR (DOĞRUDAN SAĞLIĞA İLİŞKİN OLMAYAN MUTFAK VE RESTORAN ATIKLARI HARİÇ)</h3>
+                <hr></div>
+                <div class="buttonsAl">
+                    <div class="button1Al buttonAl buttonAlAfter" id="3">Baskı Mürekkeplerinin İmalat, Formülasyon, Tedarik ve Kullanımından (İFTK) Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul3"></ul>
+                    <div class="button2Al buttonAl"id="4">Metallerin ve Plastiklerin Fiziki ve Mekanik Yüzey İşlemlerinden ve Biçimlendirilmesinden Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul4"></ul>
+                    <div class="button2Al buttonAl"id="4">Atık hidrolik yağlar</div>
+                    <ul class="codeAl" id="ul4"></ul>
+                    <div class="button3Al buttonAl"id="5">Atık Motor, Şanzıman ve Yağlama Yağları</div>
+                    <ul class="codeAl" id="ul5"></ul>
+                    <div class="button4Al buttonAl"id="6">Atık Yalıtım ve Isı iletim Yağları</div>
+                    <ul class="codeAl" id="ul6"></ul>
+                    <div class="button5Al buttonAl"id="7">Yağ/Su Ayırıcısı İçerikleri</div>
+                    <ul class="codeAl" id="ul7"></ul>
+                    <div class="button5Al buttonAl"id="8">Atıkların Fiziki/Kimyasal Arıtımından Kaynaklanan Atıklar (Krom Giderme, Siyanür Giderme, Nötralizasyon Dahil)</div>
+                    <ul class="codeAl" id="ul8"></ul>
+                    <div class="button5Al buttonAl"id="9">Başka Bir Şekilde Tanımlanmamış Atıksu Arıtma Tesisi Atıkları</div>
+                    <ul class="codeAl" id="ul9"></ul>
+                </div>
+                
+            </div>
+               
+            
+        </div>
+        <!-- *****************ambalaj atık ************************** -->
+        <div data-aos="fade-up" class="sectionBlocks">
+            <div class="atikListTitle">
+                <h1 class="titleAL">AMBALAJ ATIKLARI</h1>
+            </div>
+
+            <div class="atikListMidle">
+                <h3 class="middleTitle">Tıbbi Atık Nedir?</h3>
+                <p>
+                    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı’nın yayınladığı “Tıbbi Atıkların Kontrolü Yönetmeliği”ne göre tıbbi atık; sağlık tesislerinden çıkan kesici-delici aletler, patolojik ve enfeksiyon yapıcı atıklardır. Birleşik Devletler Çevre Koruma Ajansı’nın (EPA) tanımına göre ise; Tıbbi atık, hastaneler, doktor muayenehaneleri, diş muayenehaneleri, kan bankaları ve veteriner hastaneleri/klinikleri gibi sağlık tesislerinde ve ayrıca tıbbi araştırma tesislerinde ve laboratuvarlarda üretilen atıklardır. Genel olarak tıbbi atık, kan, vücut sıvıları veya diğer potansiyel olarak bulaşıcı materyallerle kontamine olabilen sağlık hizmeti atıklarıdır. <br> <br>
+Sağlık hizmetinden çıkan atığın tıbbi atık olup olmadığını öğrenmek için, atığın kesici-delici özellikte olup olmadığı araştırılır. Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre; “enjektör ve diğer tüm tıbbi girişim iğneleri, lanset, kapiller tüp, bisturi, bıçak, serum seti iğnesi, cerrahi sütur iğneleri, biyopsi iğneleri, intraket, kırık cam, ampul, lam-lamel, kırılmış cam tüp ve petri kapları gibi batma, delme, sıyrık ve yaralanmalara neden olabilecek atıklar”, kesici-delici atık olarak nitelendirilmiştir. Bu özelliğe sahip atıklar, toplayan personelin yaralanma riskinden dolayı, yırtılma ihtimaline sahip materyaller ile toplanmamalıdır. <br><br>
+
+Tıbbi atık, kesici ve delici özellik taşımadığı durumlarda ise, patolojik içeriğe sahip olup olmadığı sorgulanır. “Cerrahi girişim, otopsi, anatomi veya patoloji çalışması sonucu ortaya çıkan dokuları, organları, vücut parçalarını, vücut sıvıları” patolojik atık olarak tanımlanabilir. Ameliyathane, patoloji laboratuvarı, doku tipleme ve genetik laboratuvarlarında oluşmakta olan bu tür atıklar ise, delinmeye kırılmaya dayanıklı sırdırmaz biriktirme kapları ile toplanmalıdır. Kimyasal bir işleme tabii tutulmayan patolojik atıklar, sterilizasyon işlemine kabul edilebilir. Kimyasalla işlem görmüş herhangi bir patolojik atıklar, enfeksiyon yapıcı kategorisi altında değerlendirilmektedir ve yakılarak bertaraf edilmesi zorunludur. <br><br>
+
+Kesici-delici ve patolojik atık olarak görülmeyen atıklar, enfeksiyon yapıcı atık sınıfı altında yer alabilir. Enfeksiyon yapıcı atıklar; Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre “enfeksiyon yapıcı etkenleri taşıdığı bilinen veya taşıması muhtemel; başta kan ve kan ürünleri olmak üzere her türlü vücut sıvısı, insan dokuları, organları, anatomik parçaları, otopsi materyali, plasenta, fetus ve diğer patolojik materyali, bu tür materyal ile bulaşmış eldiven, örtü, çarşaf, bandaj, flaster, tamponlar, eküvyon ve benzeri atıkları, karantina altındaki hastaların vücut çıkartılarını, bakteri ve virüs tutucu hava filtrelerini, enfeksiyon yapıcı ajanların laboratuvar kültürlerini ve kültür stoklarını, enfekte hayvanlara ve çıkartılarına temas etmiş her türlü malzemeyi, veterinerlik hizmetlerinden kaynaklanan atıkları” kapsamaktadır. Bu tür atıklar enfeksiyon riski taşımasından dolayı herhangi bir başka atık kutusuna atılmamalıdır ve atıkların toplandığı poşetlere tekrar kullanma ve geri kazanım işlemleri uygulanmamalıdır. Özetle; hastaların vücut sıvılarını içeren veya bulaşmış olan, izolasyon odalarında oluşan veya izolasyon altındaki hastanın vücut sıvıları ile teması olan her atık enfeksiyon yapıcı atık olarak adlandırılabilir. <br><br>
+
+Yukarıdaki açıklamalara bakılarak, eğer atık sağlık kuruluşundan verilen hizmetten kaynaklanmıyorsa; tıbbi atık değildir yorumu yapılabilir. Bu tür atıklar, belediye atıkları ile toplanabilir ve bertaraf yöntemi olarak aynı metodlar kullanılabilir. <br><br>
+
+Sağlık sektöründen kaynaklanan atıkların atık kodu listesi ve tehlikelilik durumu aşağıda verilmiştir. Bu tabloya bakılarak atık türü belirlenebilir. 
+
+                </p>
+            </div>
+            <div class="atikListEnd">
+               <div class="titleEnd"> <h3>İNSAN VE HAYVAN SAĞLIĞI VE/VEYA BU KONULARDAKI ARAŞTIRMALARDAN KAYNAKLANAN ATIKLAR (DOĞRUDAN SAĞLIĞA İLİŞKİN OLMAYAN MUTFAK VE RESTORAN ATIKLARI HARİÇ)</h3>
+                <hr></div>
+                <div class="buttonsAl">
+                    <div class="button1Al buttonAl buttonAlAfter"id="10">İnsanlarda Doğum, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalanndan Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul10"></ul>
+                    <div class="button2Al buttonAl"id="11">Hayvanlarla İlgili Araştırma, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalarından Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul11"></ul>
+                </div>
+                
+                    
+                </ul>
+            </div>
+               
+            
+        </div>
+        <!-- *****************atik lastik **************************** -->
+        <div data-aos="fade-up" class="sectionBlocks">
+            <div class="atikListTitle">
+                <h1 class="titleAL">ATIK LASTİK</h1>
+            </div>
+
+            <div class="atikListMidle">
+                <h3 class="middleTitle">Atık Lastik Nedir?</h3>
+                <p>
+                    Atık lastik ya da ömrünü tamamlamış lastik (ÖTL), “faydalı ömrünü tamamladığı belirlenerek araçtan sökülen orijinal veya kaplanmış, bir daha araç üzerinde lastik olarak kullanılamayacak durumda olan ve üretim esnasında ortaya çıkan ıskarta lastikleri” olarak tanımlanmaktadır (Ömrünü Tamamlamış Lastiklerin Kontrolü Yönetmeliği, 2006). <br><br>
+                    Oluşan atık lastiklerin; hava, su, toprak, bitki ve hayvanlara zarar vermeden ve çevreyi etkileyecek herhangi bir olumsuzluk bulunmadan geri kazanımı ve bertarafı esastır. Yönetmeliğe göre; ÖTL’ler dolgu malzemesi olarak kullanılmamalı, katı atık depolama tesislerine kabülü ve depolanması, ısınmada kullanılması ve herhangi bir başka amaçla yakılması yasaktır <br> <br>
+                    Atık lastikler, yeniden kullanım veya geri kazanım amaçlı işlenebilir. Bununla birlikte, bazen yönetim maliyetlerini azaltmak/kaçınmak için büyük miktarlarda belirli alanlarda süresiz olarak depolanmaları da muhtemeldir. Bu şekilde kaynak geri kazanımı ciddi oranlarda azalmaktadır. Geri kazanımın mümkün olmadığı zamanlarda ise, yakılarak enerji eldesi çerçevesinde kullanılmaktadır. <br> <br>
+                    
+                </p>
+            </div>
+            <div class="atikListEnd">
+               <div class="titleEnd"> <h3>İNSAN VE HAYVAN SAĞLIĞI VE/VEYA BU KONULARDAKI ARAŞTIRMALARDAN KAYNAKLANAN ATIKLAR (DOĞRUDAN SAĞLIĞA İLİŞKİN OLMAYAN MUTFAK VE RESTORAN ATIKLARI HARİÇ)</h3>
+                <hr></div>
+                <div class="buttonsAl">
+                    <div class="button1Al buttonAl buttonAlAfter"id="12">Tarım, Bahçıvanlık, Su Ürünleri Üretimi, Ormancılık, Avcılık ve Balıkçılıktan Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul12"></ul>
+                    <div class="button2Al buttonAl"id="13">Çeşitli Taşıma Türlerindeki (İş Makineleri Dahil) Ömrünü Tamamlamış Araçlar ve Ömrünü Tamamlamış Araçların Sökülmesi ile Araç Bakımından (13, 14, 16 06 ve 16 08 hariç) Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul13"></ul>
+                    <div class="button3Al buttonAl"id="14">Başka Bir Şekilde Tanımlanmamış Atıkların Mekanik Arıtımından (Örneğin Ayrıştırılması, Ezilmesi, Sıkıştırılması, Topak Haline Getirilmesi) Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul14"></ul>
+                </div>
+                
+                    
+                
+            </div>
+               
+            
+        </div>
+       <!--  *************************tehlikeli atik*********************** -->
+        <div data-aos="fade-up" class="sectionBlocks">
+            <div class="atikListTitle">
+                <h1 class="titleAL">TEHLİKELİ ATIK</h1>
+            </div>
+
+            <div class="atikListMidle">
+                <h3 class="middleTitle">Tıbbi Atık Nedir?</h3>
+                <p>
+                    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı’nın yayınladığı “Tıbbi Atıkların Kontrolü Yönetmeliği”ne göre tıbbi atık; sağlık tesislerinden çıkan kesici-delici aletler, patolojik ve enfeksiyon yapıcı atıklardır. Birleşik Devletler Çevre Koruma Ajansı’nın (EPA) tanımına göre ise; Tıbbi atık, hastaneler, doktor muayenehaneleri, diş muayenehaneleri, kan bankaları ve veteriner hastaneleri/klinikleri gibi sağlık tesislerinde ve ayrıca tıbbi araştırma tesislerinde ve laboratuvarlarda üretilen atıklardır. Genel olarak tıbbi atık, kan, vücut sıvıları veya diğer potansiyel olarak bulaşıcı materyallerle kontamine olabilen sağlık hizmeti atıklarıdır. <br> <br>
+Sağlık hizmetinden çıkan atığın tıbbi atık olup olmadığını öğrenmek için, atığın kesici-delici özellikte olup olmadığı araştırılır. Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre; “enjektör ve diğer tüm tıbbi girişim iğneleri, lanset, kapiller tüp, bisturi, bıçak, serum seti iğnesi, cerrahi sütur iğneleri, biyopsi iğneleri, intraket, kırık cam, ampul, lam-lamel, kırılmış cam tüp ve petri kapları gibi batma, delme, sıyrık ve yaralanmalara neden olabilecek atıklar”, kesici-delici atık olarak nitelendirilmiştir. Bu özelliğe sahip atıklar, toplayan personelin yaralanma riskinden dolayı, yırtılma ihtimaline sahip materyaller ile toplanmamalıdır. <br><br>
+
+Tıbbi atık, kesici ve delici özellik taşımadığı durumlarda ise, patolojik içeriğe sahip olup olmadığı sorgulanır. “Cerrahi girişim, otopsi, anatomi veya patoloji çalışması sonucu ortaya çıkan dokuları, organları, vücut parçalarını, vücut sıvıları” patolojik atık olarak tanımlanabilir. Ameliyathane, patoloji laboratuvarı, doku tipleme ve genetik laboratuvarlarında oluşmakta olan bu tür atıklar ise, delinmeye kırılmaya dayanıklı sırdırmaz biriktirme kapları ile toplanmalıdır. Kimyasal bir işleme tabii tutulmayan patolojik atıklar, sterilizasyon işlemine kabul edilebilir. Kimyasalla işlem görmüş herhangi bir patolojik atıklar, enfeksiyon yapıcı kategorisi altında değerlendirilmektedir ve yakılarak bertaraf edilmesi zorunludur. <br><br>
+
+Kesici-delici ve patolojik atık olarak görülmeyen atıklar, enfeksiyon yapıcı atık sınıfı altında yer alabilir. Enfeksiyon yapıcı atıklar; Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre “enfeksiyon yapıcı etkenleri taşıdığı bilinen veya taşıması muhtemel; başta kan ve kan ürünleri olmak üzere her türlü vücut sıvısı, insan dokuları, organları, anatomik parçaları, otopsi materyali, plasenta, fetus ve diğer patolojik materyali, bu tür materyal ile bulaşmış eldiven, örtü, çarşaf, bandaj, flaster, tamponlar, eküvyon ve benzeri atıkları, karantina altındaki hastaların vücut çıkartılarını, bakteri ve virüs tutucu hava filtrelerini, enfeksiyon yapıcı ajanların laboratuvar kültürlerini ve kültür stoklarını, enfekte hayvanlara ve çıkartılarına temas etmiş her türlü malzemeyi, veterinerlik hizmetlerinden kaynaklanan atıkları” kapsamaktadır. Bu tür atıklar enfeksiyon riski taşımasından dolayı herhangi bir başka atık kutusuna atılmamalıdır ve atıkların toplandığı poşetlere tekrar kullanma ve geri kazanım işlemleri uygulanmamalıdır. Özetle; hastaların vücut sıvılarını içeren veya bulaşmış olan, izolasyon odalarında oluşan veya izolasyon altındaki hastanın vücut sıvıları ile teması olan her atık enfeksiyon yapıcı atık olarak adlandırılabilir. <br><br>
+
+Yukarıdaki açıklamalara bakılarak, eğer atık sağlık kuruluşundan verilen hizmetten kaynaklanmıyorsa; tıbbi atık değildir yorumu yapılabilir. Bu tür atıklar, belediye atıkları ile toplanabilir ve bertaraf yöntemi olarak aynı metodlar kullanılabilir. <br><br>
+
+Sağlık sektöründen kaynaklanan atıkların atık kodu listesi ve tehlikelilik durumu aşağıda verilmiştir. Bu tabloya bakılarak atık türü belirlenebilir. 
+
+                </p>
+            </div>
+            <div class="atikListEnd">
+               <div class="titleEnd"> <h3>İNSAN VE HAYVAN SAĞLIĞI VE/VEYA BU KONULARDAKI ARAŞTIRMALARDAN KAYNAKLANAN ATIKLAR (DOĞRUDAN SAĞLIĞA İLİŞKİN OLMAYAN MUTFAK VE RESTORAN ATIKLARI HARİÇ)</h3>
+                <hr></div>
+                <div class="buttonsAl">
+                    <div class="button1Al buttonAl buttonAlAfter"id="15">İnsanlarda Doğum, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalanndan Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul15"></ul>
+                    <div class="button2Al buttonAl"id="16">Hayvanlarla İlgili Araştırma, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalarından Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul16"></ul>
+                </div>
+                
+                    
+                
+            </div>
+               
+            
+        </div>
+        <!-- *******************biyobozunur atik******************* -->
+        <div data-aos="fade-up" class="sectionBlocks">
+            <div class="atikListTitle">
+                <h1 class="titleAL">BİYOBOZUNUR ATIK</h1>
+            </div>
+
+            <div class="atikListMidle">
+                <h3 class="middleTitle">Tıbbi Atık Nedir?</h3>
+                <p>
+                    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı’nın yayınladığı “Tıbbi Atıkların Kontrolü Yönetmeliği”ne göre tıbbi atık; sağlık tesislerinden çıkan kesici-delici aletler, patolojik ve enfeksiyon yapıcı atıklardır. Birleşik Devletler Çevre Koruma Ajansı’nın (EPA) tanımına göre ise; Tıbbi atık, hastaneler, doktor muayenehaneleri, diş muayenehaneleri, kan bankaları ve veteriner hastaneleri/klinikleri gibi sağlık tesislerinde ve ayrıca tıbbi araştırma tesislerinde ve laboratuvarlarda üretilen atıklardır. Genel olarak tıbbi atık, kan, vücut sıvıları veya diğer potansiyel olarak bulaşıcı materyallerle kontamine olabilen sağlık hizmeti atıklarıdır. <br> <br>
+Sağlık hizmetinden çıkan atığın tıbbi atık olup olmadığını öğrenmek için, atığın kesici-delici özellikte olup olmadığı araştırılır. Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre; “enjektör ve diğer tüm tıbbi girişim iğneleri, lanset, kapiller tüp, bisturi, bıçak, serum seti iğnesi, cerrahi sütur iğneleri, biyopsi iğneleri, intraket, kırık cam, ampul, lam-lamel, kırılmış cam tüp ve petri kapları gibi batma, delme, sıyrık ve yaralanmalara neden olabilecek atıklar”, kesici-delici atık olarak nitelendirilmiştir. Bu özelliğe sahip atıklar, toplayan personelin yaralanma riskinden dolayı, yırtılma ihtimaline sahip materyaller ile toplanmamalıdır. <br><br>
+
+Tıbbi atık, kesici ve delici özellik taşımadığı durumlarda ise, patolojik içeriğe sahip olup olmadığı sorgulanır. “Cerrahi girişim, otopsi, anatomi veya patoloji çalışması sonucu ortaya çıkan dokuları, organları, vücut parçalarını, vücut sıvıları” patolojik atık olarak tanımlanabilir. Ameliyathane, patoloji laboratuvarı, doku tipleme ve genetik laboratuvarlarında oluşmakta olan bu tür atıklar ise, delinmeye kırılmaya dayanıklı sırdırmaz biriktirme kapları ile toplanmalıdır. Kimyasal bir işleme tabii tutulmayan patolojik atıklar, sterilizasyon işlemine kabul edilebilir. Kimyasalla işlem görmüş herhangi bir patolojik atıklar, enfeksiyon yapıcı kategorisi altında değerlendirilmektedir ve yakılarak bertaraf edilmesi zorunludur. <br><br>
+
+Kesici-delici ve patolojik atık olarak görülmeyen atıklar, enfeksiyon yapıcı atık sınıfı altında yer alabilir. Enfeksiyon yapıcı atıklar; Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre “enfeksiyon yapıcı etkenleri taşıdığı bilinen veya taşıması muhtemel; başta kan ve kan ürünleri olmak üzere her türlü vücut sıvısı, insan dokuları, organları, anatomik parçaları, otopsi materyali, plasenta, fetus ve diğer patolojik materyali, bu tür materyal ile bulaşmış eldiven, örtü, çarşaf, bandaj, flaster, tamponlar, eküvyon ve benzeri atıkları, karantina altındaki hastaların vücut çıkartılarını, bakteri ve virüs tutucu hava filtrelerini, enfeksiyon yapıcı ajanların laboratuvar kültürlerini ve kültür stoklarını, enfekte hayvanlara ve çıkartılarına temas etmiş her türlü malzemeyi, veterinerlik hizmetlerinden kaynaklanan atıkları” kapsamaktadır. Bu tür atıklar enfeksiyon riski taşımasından dolayı herhangi bir başka atık kutusuna atılmamalıdır ve atıkların toplandığı poşetlere tekrar kullanma ve geri kazanım işlemleri uygulanmamalıdır. Özetle; hastaların vücut sıvılarını içeren veya bulaşmış olan, izolasyon odalarında oluşan veya izolasyon altındaki hastanın vücut sıvıları ile teması olan her atık enfeksiyon yapıcı atık olarak adlandırılabilir. <br><br>
+
+Yukarıdaki açıklamalara bakılarak, eğer atık sağlık kuruluşundan verilen hizmetten kaynaklanmıyorsa; tıbbi atık değildir yorumu yapılabilir. Bu tür atıklar, belediye atıkları ile toplanabilir ve bertaraf yöntemi olarak aynı metodlar kullanılabilir. <br><br>
+
+Sağlık sektöründen kaynaklanan atıkların atık kodu listesi ve tehlikelilik durumu aşağıda verilmiştir. Bu tabloya bakılarak atık türü belirlenebilir. 
+
+                </p>
+            </div>
+            <div class="atikListEnd">
+               <div class="titleEnd"> <h3>İNSAN VE HAYVAN SAĞLIĞI VE/VEYA BU KONULARDAKI ARAŞTIRMALARDAN KAYNAKLANAN ATIKLAR (DOĞRUDAN SAĞLIĞA İLİŞKİN OLMAYAN MUTFAK VE RESTORAN ATIKLARI HARİÇ)</h3>
+                <hr></div>
+                <div class="buttonsAl">
+                    <div class="button1Al buttonAl buttonAlAfter"id="17">İnsanlarda Doğum, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalanndan Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul17"></ul>
+                    <div class="button2Al buttonAl"id="18">Hayvanlarla İlgili Araştırma, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalarından Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul18"></ul>
+                </div>
+                
+            </div>
+               
+            
+        </div>
+        <!-- ************bitkisel atık****************************** -->
+        <div data-aos="fade-up" class="sectionBlocks">
+            <div class="atikListTitle">
+                <h1 class="titleAL">BİTKİSEL ATIK YAĞ</h1>
+            </div>
+
+            <div class="atikListMidle">
+                <h3 class="middleTitle">Atık Bitkisel Yağ Nedir?</h3>
+                <p>
+                    Bitkisel atık yağ, bitkisel kökenli ve değişik kullanım amaçlarını içererek kullanılan gıda yağlarıdır. Atık Yönetim Yönetmeliğinde yer alan atık tanımına uygun bitkisel yağlar ile kullanılmış kızartmalık yağları kapsamaktadır. Gıda üretimi ve pişirme sonrası da oluşabilen bu yağlar; aynı zamanda son kullanma tarihi geçen ürünleri de içermektedir. <br><br>
+	Bitkisel atık yağların kaynağından azaltma, ayrı toplama ve geri kazanım gibi işlemler yapılmalıdır. Bitkisel atık yağların yönetimi “Bitkisel Atık Yağların Kontrolü Yönetmeliğine” uygun şekilde yapılmalıdır. <br> <br>
+	Bitkisel atık yağ üreten kuruluşlar, bu yağların toplanması için bitkisel atık yağ geri kazanım veya bitkisel atık yağ ara depolama lisansına sahip tesisler ile yıllık sözleşme yapmalıdır. Bitkisel atık yağlar, sadece bitkisel atık yağ taşıma lisansına sahip kişilerce toplanabilir. Bitkisel atık yağların taşınmasında bakanlığın MoTAT sistemi kullanılmalıdır. <br><br>
+	Aşağıdaki tabloda potansiyel bitkisel atık yağların atık kodları verilmiştir. <br>
+
+                </p>
+            </div>
+            <div class="atikListEnd">
+               <div class="titleEnd"> <h3>İNSAN VE HAYVAN SAĞLIĞI VE/VEYA BU KONULARDAKI ARAŞTIRMALARDAN KAYNAKLANAN ATIKLAR (DOĞRUDAN SAĞLIĞA İLİŞKİN OLMAYAN MUTFAK VE RESTORAN ATIKLARI HARİÇ)</h3>
+                <hr></div>
+                <div class="buttonsAl">
+                    <div class="button1Al buttonAl buttonAlAfter"id="19">Ayrı Toplanan Fraksiyonlar (15 01 Hariç)</div>
+                    <ul class="codeAl" id="ul19"></ul>
+                  
+                </div>
+                
+            </div>
+               
+            
+        </div>
+       <!--  ********************elektrik elektronik******************** -->
+        <div data-aos="fade-up" class="sectionBlocks">
+            <div class="atikListTitle">
+                <h1 class="titleAL">ATIK ELEKTRİKLİ ELEKTRONİK ALETLER</h1>
+            </div>
+
+            <div class="atikListMidle">
+                <h3 class="middleTitle">Tıbbi Atık Nedir?</h3>
+                <p>
+                    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı’nın yayınladığı “Tıbbi Atıkların Kontrolü Yönetmeliği”ne göre tıbbi atık; sağlık tesislerinden çıkan kesici-delici aletler, patolojik ve enfeksiyon yapıcı atıklardır. Birleşik Devletler Çevre Koruma Ajansı’nın (EPA) tanımına göre ise; Tıbbi atık, hastaneler, doktor muayenehaneleri, diş muayenehaneleri, kan bankaları ve veteriner hastaneleri/klinikleri gibi sağlık tesislerinde ve ayrıca tıbbi araştırma tesislerinde ve laboratuvarlarda üretilen atıklardır. Genel olarak tıbbi atık, kan, vücut sıvıları veya diğer potansiyel olarak bulaşıcı materyallerle kontamine olabilen sağlık hizmeti atıklarıdır. <br> <br>
+Sağlık hizmetinden çıkan atığın tıbbi atık olup olmadığını öğrenmek için, atığın kesici-delici özellikte olup olmadığı araştırılır. Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre; “enjektör ve diğer tüm tıbbi girişim iğneleri, lanset, kapiller tüp, bisturi, bıçak, serum seti iğnesi, cerrahi sütur iğneleri, biyopsi iğneleri, intraket, kırık cam, ampul, lam-lamel, kırılmış cam tüp ve petri kapları gibi batma, delme, sıyrık ve yaralanmalara neden olabilecek atıklar”, kesici-delici atık olarak nitelendirilmiştir. Bu özelliğe sahip atıklar, toplayan personelin yaralanma riskinden dolayı, yırtılma ihtimaline sahip materyaller ile toplanmamalıdır. <br><br>
+
+Tıbbi atık, kesici ve delici özellik taşımadığı durumlarda ise, patolojik içeriğe sahip olup olmadığı sorgulanır. “Cerrahi girişim, otopsi, anatomi veya patoloji çalışması sonucu ortaya çıkan dokuları, organları, vücut parçalarını, vücut sıvıları” patolojik atık olarak tanımlanabilir. Ameliyathane, patoloji laboratuvarı, doku tipleme ve genetik laboratuvarlarında oluşmakta olan bu tür atıklar ise, delinmeye kırılmaya dayanıklı sırdırmaz biriktirme kapları ile toplanmalıdır. Kimyasal bir işleme tabii tutulmayan patolojik atıklar, sterilizasyon işlemine kabul edilebilir. Kimyasalla işlem görmüş herhangi bir patolojik atıklar, enfeksiyon yapıcı kategorisi altında değerlendirilmektedir ve yakılarak bertaraf edilmesi zorunludur. <br><br>
+
+Kesici-delici ve patolojik atık olarak görülmeyen atıklar, enfeksiyon yapıcı atık sınıfı altında yer alabilir. Enfeksiyon yapıcı atıklar; Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre “enfeksiyon yapıcı etkenleri taşıdığı bilinen veya taşıması muhtemel; başta kan ve kan ürünleri olmak üzere her türlü vücut sıvısı, insan dokuları, organları, anatomik parçaları, otopsi materyali, plasenta, fetus ve diğer patolojik materyali, bu tür materyal ile bulaşmış eldiven, örtü, çarşaf, bandaj, flaster, tamponlar, eküvyon ve benzeri atıkları, karantina altındaki hastaların vücut çıkartılarını, bakteri ve virüs tutucu hava filtrelerini, enfeksiyon yapıcı ajanların laboratuvar kültürlerini ve kültür stoklarını, enfekte hayvanlara ve çıkartılarına temas etmiş her türlü malzemeyi, veterinerlik hizmetlerinden kaynaklanan atıkları” kapsamaktadır. Bu tür atıklar enfeksiyon riski taşımasından dolayı herhangi bir başka atık kutusuna atılmamalıdır ve atıkların toplandığı poşetlere tekrar kullanma ve geri kazanım işlemleri uygulanmamalıdır. Özetle; hastaların vücut sıvılarını içeren veya bulaşmış olan, izolasyon odalarında oluşan veya izolasyon altındaki hastanın vücut sıvıları ile teması olan her atık enfeksiyon yapıcı atık olarak adlandırılabilir. <br><br>
+
+Yukarıdaki açıklamalara bakılarak, eğer atık sağlık kuruluşundan verilen hizmetten kaynaklanmıyorsa; tıbbi atık değildir yorumu yapılabilir. Bu tür atıklar, belediye atıkları ile toplanabilir ve bertaraf yöntemi olarak aynı metodlar kullanılabilir. <br><br>
+
+Sağlık sektöründen kaynaklanan atıkların atık kodu listesi ve tehlikelilik durumu aşağıda verilmiştir. Bu tabloya bakılarak atık türü belirlenebilir. 
+
+                </p>
+            </div>
+            <div class="atikListEnd">
+               <div class="titleEnd"> <h3>İNSAN VE HAYVAN SAĞLIĞI VE/VEYA BU KONULARDAKI ARAŞTIRMALARDAN KAYNAKLANAN ATIKLAR (DOĞRUDAN SAĞLIĞA İLİŞKİN OLMAYAN MUTFAK VE RESTORAN ATIKLARI HARİÇ)</h3>
+                <hr></div>
+                <div class="buttonsAl">
+                    <div class="button1Al buttonAl buttonAlAfter"id="20">İnsanlarda Doğum, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalanndan Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul20"></ul>
+                    <div class="button2Al buttonAl"id="21">Hayvanlarla İlgili Araştırma, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalarından Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul21"></ul>
+                </div>
+              
+            </div>
+               
+            
+        </div>
+       <!--  *******************tibbi atık **************************** -->
+        <div data-aos="fade-up" class="sectionBlocks">
+            <div class="atikListTitle">
+                <h1 class="titleAL">TIBBİ ATIK</h1>
+            </div>
+
+            <div class="atikListMidle">
+                <h3 class="middleTitle">Tıbbi Atık Nedir?</h3>
+                <p>
+                    Çevre, Şehircilik ve İklim Değişikliği Bakanlığı’nın yayınladığı “Tıbbi Atıkların Kontrolü Yönetmeliği”ne göre tıbbi atık; sağlık tesislerinden çıkan kesici-delici aletler, patolojik ve enfeksiyon yapıcı atıklardır. Birleşik Devletler Çevre Koruma Ajansı’nın (EPA) tanımına göre ise; Tıbbi atık, hastaneler, doktor muayenehaneleri, diş muayenehaneleri, kan bankaları ve veteriner hastaneleri/klinikleri gibi sağlık tesislerinde ve ayrıca tıbbi araştırma tesislerinde ve laboratuvarlarda üretilen atıklardır. Genel olarak tıbbi atık, kan, vücut sıvıları veya diğer potansiyel olarak bulaşıcı materyallerle kontamine olabilen sağlık hizmeti atıklarıdır. <br> <br>
+Sağlık hizmetinden çıkan atığın tıbbi atık olup olmadığını öğrenmek için, atığın kesici-delici özellikte olup olmadığı araştırılır. Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre; “enjektör ve diğer tüm tıbbi girişim iğneleri, lanset, kapiller tüp, bisturi, bıçak, serum seti iğnesi, cerrahi sütur iğneleri, biyopsi iğneleri, intraket, kırık cam, ampul, lam-lamel, kırılmış cam tüp ve petri kapları gibi batma, delme, sıyrık ve yaralanmalara neden olabilecek atıklar”, kesici-delici atık olarak nitelendirilmiştir. Bu özelliğe sahip atıklar, toplayan personelin yaralanma riskinden dolayı, yırtılma ihtimaline sahip materyaller ile toplanmamalıdır. <br><br>
+
+Tıbbi atık, kesici ve delici özellik taşımadığı durumlarda ise, patolojik içeriğe sahip olup olmadığı sorgulanır. “Cerrahi girişim, otopsi, anatomi veya patoloji çalışması sonucu ortaya çıkan dokuları, organları, vücut parçalarını, vücut sıvıları” patolojik atık olarak tanımlanabilir. Ameliyathane, patoloji laboratuvarı, doku tipleme ve genetik laboratuvarlarında oluşmakta olan bu tür atıklar ise, delinmeye kırılmaya dayanıklı sırdırmaz biriktirme kapları ile toplanmalıdır. Kimyasal bir işleme tabii tutulmayan patolojik atıklar, sterilizasyon işlemine kabul edilebilir. Kimyasalla işlem görmüş herhangi bir patolojik atıklar, enfeksiyon yapıcı kategorisi altında değerlendirilmektedir ve yakılarak bertaraf edilmesi zorunludur. <br><br>
+
+Kesici-delici ve patolojik atık olarak görülmeyen atıklar, enfeksiyon yapıcı atık sınıfı altında yer alabilir. Enfeksiyon yapıcı atıklar; Tıbbi Atıkların Kontrolü Yönetmeliği’ne göre “enfeksiyon yapıcı etkenleri taşıdığı bilinen veya taşıması muhtemel; başta kan ve kan ürünleri olmak üzere her türlü vücut sıvısı, insan dokuları, organları, anatomik parçaları, otopsi materyali, plasenta, fetus ve diğer patolojik materyali, bu tür materyal ile bulaşmış eldiven, örtü, çarşaf, bandaj, flaster, tamponlar, eküvyon ve benzeri atıkları, karantina altındaki hastaların vücut çıkartılarını, bakteri ve virüs tutucu hava filtrelerini, enfeksiyon yapıcı ajanların laboratuvar kültürlerini ve kültür stoklarını, enfekte hayvanlara ve çıkartılarına temas etmiş her türlü malzemeyi, veterinerlik hizmetlerinden kaynaklanan atıkları” kapsamaktadır. Bu tür atıklar enfeksiyon riski taşımasından dolayı herhangi bir başka atık kutusuna atılmamalıdır ve atıkların toplandığı poşetlere tekrar kullanma ve geri kazanım işlemleri uygulanmamalıdır. Özetle; hastaların vücut sıvılarını içeren veya bulaşmış olan, izolasyon odalarında oluşan veya izolasyon altındaki hastanın vücut sıvıları ile teması olan her atık enfeksiyon yapıcı atık olarak adlandırılabilir. <br><br>
+
+Yukarıdaki açıklamalara bakılarak, eğer atık sağlık kuruluşundan verilen hizmetten kaynaklanmıyorsa; tıbbi atık değildir yorumu yapılabilir. Bu tür atıklar, belediye atıkları ile toplanabilir ve bertaraf yöntemi olarak aynı metodlar kullanılabilir. <br><br>
+
+Sağlık sektöründen kaynaklanan atıkların atık kodu listesi ve tehlikelilik durumu aşağıda verilmiştir. Bu tabloya bakılarak atık türü belirlenebilir. 
+
+                </p>
+            </div>
+            <div class="atikListEnd">
+               <div class="titleEnd"> <h3>İNSAN VE HAYVAN SAĞLIĞI VE/VEYA BU KONULARDAKI ARAŞTIRMALARDAN KAYNAKLANAN ATIKLAR (DOĞRUDAN SAĞLIĞA İLİŞKİN OLMAYAN MUTFAK VE RESTORAN ATIKLARI HARİÇ)</h3>
+                <hr></div>
+                <div class="buttonsAl">
+                    <div class="button1Al buttonAl buttonAlAfter"id="22">İnsanlarda Doğum, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalanndan Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul22"></ul>
+                    <div class="button2Al buttonAl"id="23">Hayvanlarla İlgili Araştırma, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalarından Kaynaklanan Atıklar</div>
+                    <ul class="codeAl" id="ul23"></ul>
+                </div>
+             
+            </div>
+               
+            
+        </div>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> -->
+
+    <script src="{% static 'js/atiklist.js' %}"></script>
 
 {% endblock body %}
