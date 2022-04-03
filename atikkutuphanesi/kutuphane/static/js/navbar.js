@@ -3,10 +3,8 @@
 /* const li1 = document.querySelector(".li1"); */
 var atikList = ["Atık pil ve akü" , "Atık yağ",  "Ambalaj atıkları", "Atık lastik" , "Tehlikeli atık" , "Biyobozunur atık" , "Bitkisel atık yağ" , "Atık elektrikli elektronik aletler" , "Tıbbi atık"];
 var atikhref = ["/atiklist#atikpil","/atiklist#atikyag","/sectionpart/atiklist.html#ambalajatik","/sectionpart/atiklist.html#yağatik","/sectionpart/atiklist.html#pilatik","/sectionpart/atiklist.html#elektronikatik","/sectionpart/atiklist.html#bitkiselatik","/sectionpart/atiklist.html#biyobozunuratik","http://127.0.0.1:8000/atiklist/tibbiatik"]
-const ul = document.querySelector(".navDropUl");
-const a1 = document.querySelectorAll(".a1");
-
-const ul2 = document.querySelector(".ul");
+const ul = document.querySelector(".associate");
+const clickable = document.querySelector(".clickable");
 
 // atık listesi
 function atikAdd(){
@@ -18,25 +16,44 @@ function atikAdd(){
         a.innerText=item;
         newLi.appendChild(a);
         ul.appendChild(newLi);
+        console.log("burası calısıoyur");
         
 
     })
 }
 
-// burger butonu 
-const burger = document.querySelector(".burger");
-const navDrop = document.querySelector(".navDrop");
-burger.addEventListener("click", function(){
-    console.log("burger worked");
-    navDrop.classList.toggle("toggle");
 
-
-})
 navSlide = () =>{
     
     
 
 };
+
+clickable.addEventListener("click", (e)=>{
+    if(ul.classList.contains("init")){
+        ul.classList.remove("init");
+        ul.classList.add("second");
+        atikAdd();
+        
+        
+       
+    }
+    else if(ul.classList.contains("second")){
+        ul.innerHTML="";
+        ul.classList.remove("second");
+        ul.classList.add("init");
+        
+        
+        }
+    e.preventDefault();
+        
+    }
+
+   
+    
+
+
+    );
 
 
 
@@ -97,8 +114,40 @@ function hoverFunc(drom){
 
     });
 } */
-navSlide();
-atikAdd();
+/* navSlide();
+atikAdd(); */
 /* navSlide(); */
 /* hoverFunc();
 textDecoration(ul2) */
+
+
+/* 
+$(document).ready(function(){
+    console.log("none")
+$("#dropDownLi").hover(function(){
+    $("#deneme").css("display", "flex");
+    }, function(){
+    $("#deneme").css("display","none");
+    });
+}); */
+const deneme = document.querySelector("#blue");
+const buttonDrop = document.querySelector("#dropDownLi");
+const arrow = document.querySelector("#arrow");
+buttonDrop.addEventListener("click", (e)=>{
+    if (blue.style.display == "flex"){
+        blue.style.transition=`  3s ease-out;`;
+        blue.style.display = "none";
+        arrow.className = "fa-solid fa-caret-down"
+
+    }
+    else{
+        blue.style.display = "flex"
+        arrow.className = "fa-solid fa-caret-up"
+
+
+
+
+    }
+    e.preventDefault();
+
+})

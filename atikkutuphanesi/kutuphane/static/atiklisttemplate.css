@@ -13,6 +13,7 @@
      
 }
 .mainTitle{
+     text-transform: uppercase;
      width: 100%;
      display: flex;
      justify-content: center;
@@ -77,4 +78,45 @@
 
 .marginClass{
      margin: 2rem;
+}
+
+
+.flexClass{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.flexClass-left{
+     display: flex;
+     justify-content: start;
+     align-items: center;
+}
+.paddingClass{
+     padding: 0.5rem;
+}
+.radiousClass{
+     border-radius: 0.3rem;
+}
+.lastCodeClass{
+     width: 70%;
+}
+.secondCodeClass{
+     width: 85%;
+}
+
+
+
+
+.iClass{
+     margin: 0;
+     background-color: white; 
+     color: black;
+
+}
+.aClass{
+     color: blue; text-decoration: underline;
+}
+.aClass:hover{
+     color:red;
+     text-decoration: none;
 }

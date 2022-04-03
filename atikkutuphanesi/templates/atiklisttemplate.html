@@ -2,31 +2,49 @@
 {% block body %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'atiklisttemplate.css' %}">
+<style>
+     i{
+          margin: 0;
+     }
+</style>
    <div class="mainAtikList">
      <div class="mainOfAtiklist">
-          <div class="mainTitle"><h1 class="marginClass">TIBBİ ATIK</h1></div>
+          <div class="mainTitle"><h1 class="marginClass">{{tibbiatik.mainname}}</h1></div>
           <div class="whatIsIt marginClass">
-               <h1>Tıbbi Atık Nedir?</h1>
-               <p>Tıbbi atıklar sağlık hizmeti verilen, sağlık hizmetlerine yönelik araştırmalar yapılan yerler veya dövme, akupunktur gibi hijyenik hizmetler sunan yerlerde oluşan kesici-delici, patolojik ve/veya enfeksiyon yapıcı atıklardır</p>
+               <h1>{{tibbiatik.urlname}} Nedir?</h1>
+               <p>{{tibbiatik.whatisit}}</p>
 
           </div>
           <div class="whyImportant marginClass">
-               <h1>Tıbbi Atıklar Neden Önemlidir?</h1>
-               <p>Tıbbi atıklar, eğer doğru yönetilmez ise, insanlara ve hayvanlara hastalık bulaşmasına ve salgınlara yol açabilir</p>
+               <h1>{{tibbiatik.urlname}}lar Neden Önemlidir?</h1>
+               <p>{{tibbiatik.whyimportant}}</p>
 
           </div>
           <div class="whereAccurs marginClass">
-               <h1>Tıbbi Atıklar Nerelerde Oluşur?</h1>
-               <p>İnsan ve hayvan sağlığına yönelik hizmet veren servisler; hastaneler başta olmak üzere, revirler, diyaliz merkezi, fizik tedavi merkezi, poliklinik, kan merkezi, acil müdahale birimleri, mikrobiyoloji laboratuvarları, diş hekimliği, veteriner klinikleri vb. özel klinikler, insan ve hayvan sağlığına yönelik araştırmalar yapan kuruluşlar (üniversiteler, laboratuvarlar, araştırma merkezleri), dövme salonları, akupunktur merkezlerinde oluşur</p>
+               <h1>{{tibbiatik.urlname}}lar Nerelerde Oluşur?</h1>
+               <p>{{tibbiatik.whereaccurs}}</p>
           </div>
-          <div class="howToUndrstand marginClass">
-               <h1>Atığın tıbbi atık olup olmadığını nasıl anlarım?</h1>
-               <p>Öncelikle atığın insan veya hayvan sağlığına müdahale amacıyla ve/veya bu amaca yönelik bir tanı, teşhis, tedavi, araştırma vb. süreç esnasında mı oluştuğunu dikkate almalısınız. 
-                    Atık herhangi bir sağlık hizmeti verilmesi (dövme ve akupunktur gibi kan ile temas içeren müdahaleler de dahildir) veya buna yönelik bir araştırma esnasında oluşmamışsa tıbbi atık değildir.
-                    Atık kaynağı teyit edildikten sonra atığın kesici-delici özellikte olup olmadığına bakılabilir. Atık, kesici-delici bir özellik taşıyor ise tıbbi atıktır. Atık, içerisinde herhangi bir kimyasal işlem görmemiş patolojik ögeler barındırıyor ise (doku-organ parçaları, fetüs vb.) tıbbi atıktır. Son olarak atık, enfeksiyon yapıcı etkenleri taşıdığı bilinen veya taşıması muhtemel maddeleri içeriyor ise veya bu maddeler ile bulaşmış ise yine tıbbi atıktır. 
-                    </p>
+          {% if tibbiatik.urlname != "Ambalaj Atık"%}
+               <div class="howToUndrstand marginClass">
+               <h1>Atığın {{tibbiatik.urlname}} olup olmadığını nasıl anlarım?</h1>
+               <p>{{tibbiatik.howunderstand}}</p>
+               </div>
+
+          
+          {% else %}
+          <div class="howToUndrstand marginClass"> 
+               <h1>tried</h1>
+
           </div>
-          <div class="tableOfIt marginClass">
+               
+          {% endif %}
+          
+          
+          
+          <h1 style="font-size: 1.5rem;font-weight: bold;">Detaylı bilgi için ilgili atık kodlarını inceleyebilirsiniz</h1>
+
+          {% if tibbiatik.urlname == "Tıbbi Atık" %}
+                <div class="tableOfIt marginClass">
                <div class="firstStep">18 İnsan ve hayvan sağlığı ve/veya bu konulardaki araştırmalardan kaynaklanan atıklar (doğrudan sağlığa ilişkin olmayan mutfak ve restoran atıkları hariç)</div>
                <div class="secondStepContainer">
                     <div>18 01 İnsanlarda Doğum, Teşhis, Tedavi ya da Hastalık Önleme Çalışmalarından Kaynaklanan Atıklar</div>
@@ -57,8 +75,75 @@
                     </div>
                </div>
           </div>
+          <!-- --------------atık lastik ------------------- -->
+          {% elif  tibbiatik.urlname == "Atık Lastik" %}
+               <div class="  paddingClass radiousClass" style="border: 1px solid black; margin-top: 1rem; background-color:rgb(95, 147, 95); color: white; font-size: 1.3rem;">16 Listede başka bir şekilde belirtilmemiş atıklar</div>
+               <div class=" flexClass paddingClass radiousClass" style="border-bottom: 1px solid black;font-size: 1.1rem; color: black; ">16 01	Çeşitli Taşıma Türlerindeki (İş Makineleri Dahil) Ömrünü Tamamlamış Araçlar ve Ömrünü Tamamlamış Araçların Sökülmesi ile Araç Bakımından (13, 14, 16 06 ve 16 08 hariç) Kaynaklanan Atıklar</div>
+              <div  >
+               <div class="flexClasss-left lastCodeClass paddingClass radiousClass" style=" margin-bottom: 3rem;"><a class="aClass" style="font-size: 1.1rem;" href="http://127.0.0.1:8000/atikkod/1">16 01 03	Ömrünü tamamlamış lastikler  </a></div>
+              </div>
+
+              <!--  -------------atik pil --------------------------- -->
+               {% elif  tibbiatik.urlname == "Atık Pil ve Akümülator" %}
+             <div class="  paddingClass radiousClass" style="border: 1px solid black; margin-top: 1rem; background-color:rgb(95, 147, 95); color: white; font-size: 1.3rem;">16 Listede başka bir şekilde belirtilmemiş atıklar</div>
+
+               <div class=" flexClass paddingClass radiousClass secondCodeClass" style="border-bottom: 1px solid black; font-size: 1.2rem; color: black; ">16 06	Piller ve Akümülatörler</div>
+
+
+               <div class="">
+               <div class="flexClasss-left lastCodeClass  paddingClass radiousClass" ><a class="aClass"  href="http://127.0.0.1:8000/atikkod/1">16 06 01*	Kurşunlu piller ve akümülatörler </a></div>
+               <div class="flexClasss-left lastCodeClass  paddingClass radiousClass" ><a class="aClass"  href="http://127.0.0.1:8000/atikkod/1">16 06 02*	Nikel kadmiyum piller</a></div>
+               <div class="flexClasss-left lastCodeClass  paddingClass radiousClass" ><a class="aClass"  href="http://127.0.0.1:8000/atikkod/1">16 06 03*	Cıva içeren piller</a></div>
+               <div class="flexClasss-left lastCodeClass  paddingClass radiousClass" ><a class="aClass"  href="http://127.0.0.1:8000/atikkod/1">16 06 04	Alkali piller (16 06 03 hariç)</a></div>
+               <div class="flexClasss-left lastCodeClass  paddingClass radiousClass" ><a class="aClass"  href="http://127.0.0.1:8000/atikkod/1">16 06 05	Diğer piller ve akümülatörler</a></div>
+               
+               </div>
+              <div class="  paddingClass radiousClass" style="border: 1px solid black; margin-top: 1rem; background-color:rgb(95, 147, 95); color: white; font-size: 1.3rem;">20  Ayrı toplanmış fraksiyonlar dahil belediye atıkları (evlerden kaynaklanan ve benzer ticari, endüstriyel ve kurumsal atıklar)</div>
+              <div class=" flexClass paddingClass radiousClass secondCodeClass" style="border-bottom: 1px solid black; font-size: 1.2rem; color: black; ">20 01	Ayrı Toplanan Fraksiyonlar (15 01 Hariç)</div>
+               
+                <div>
+
+                    <div class="flexClasss-left lastCodeClass  paddingClass radiousClass" ><a class="aClass"  href="http://127.0.0.1:8000/atikkod/1">20 01 33*	16 06 01, 16 06 02 veya 16 06 03'un altında geçen pil ve akümülatörler ve bu pilleri içeren sınıflandırılmamış karışık pil ve akümülatörler </a></div>
+                    <div class="flexClasss-left lastCodeClass  paddingClass radiousClass" style="margin-bottom: 3rem;"><a class="aClass"  href="http://127.0.0.1:8000/atikkod/1">16 06 05	Diğer piller ve akümülatörler </a></div>
+                    
+                    
+
+               </div>
+
+
+             <!--   ------------------------- bitkisel atık yag ------------------------- -->
+          {% elif  tibbiatik.urlname == "Bitkisel Atık Yag" %}
+          
+               <div class="  paddingClass radiousClass" style="border: 1px solid black; margin-top: 1rem; background-color:rgb(95, 147, 95); color: white; font-size: 1.3rem;">20  Ayrı toplanmış fraksiyonlar dahil belediye atıkları (evlerden kaynaklanan ve benzer ticari, endüstriyel ve kurumsal atıklar)</div>
+               <div class=" flexClass paddingClass radiousClass secondCodeClass" style="border-bottom: 1px solid black; font-size: 1.2rem; color: black; ">20 01	Ayrı Toplanan Fraksiyonlar (15 01 Hariç)</div>
+               <div  >
+                    <div class="flexClasss-left lastCodeClass paddingClass radiousClass" ><a class="aClass" href="http://127.0.0.1:8000/atikkod/1">20 01 25	Yenilebilir sıvı ve katı yağlar  </a></div>
+                    <div class="flexClasss-left lastCodeClass paddingClass radiousClass" style="margin-bottom:3rem;"><a class="aClass" href="http://127.0.0.1:8000/atikkod/1">20 01 26*	20 01 25 dışındaki sıvı ve katı yağlar </a></div>
+               </div>
+
+         {% elif  tibbiatik.urlname == "Biyobozunur Atık" %}
+               <select class="paddingClass radiousClass marginClass" name="select1" id="biyobozunurSelectOne">
+                    <option value="02">02 Tarım, bahçıvanlık, su ürünleri, ormancılık, avcılık ve balıkçılık, gıda hazırlama ve işlemeden kaynaklanan atıklar</option>
+                    <option value="03">03  AHŞAP İŞLEME VE KAĞIT, KARTON, KAĞIT HAMURU, PANEL(SUNTA) VE MOBİLYA ÜRETİMİNDEN KAYNAKLANAN ATIKLAR</option>
+                    <option value="04">04  DERİ, KÜRK VE TEKSTİL ENDÜSTRİLERİNDEN KAYNAKLANAN ATIKLAR</option>
+                    <option value="19">19 ATIK YÖNETİM TESİSLERİNDEN, TESİS DIŞI ATIKSU ARITMA TESİSLERİNDEN VE İNSAN TÜKETİMİ VE ENDÜSTRİYEL KULLANIM İÇİN SU HAZIRLAMA TESİSLERİNDEN KAYNAKLANAN ATIKLAR</option>
+                    <option value="20">20 yirminci</option>
+                    
+
+               </select>
+               <select class="paddingClass radiousClass marginClass" name="select2" id="biyobozunurSelectTwo">
+
+               </select>
+
+
+         
+          {% endif %}
+         
           <!-- burda kaldım -->
+          <h1> {{deneme.urlname}} </h1>
      </div>
    </div>
+   <script src="{% static 'js/atiklisttemplate.js' %}"></script>
      
+
 {% endblock body %} 

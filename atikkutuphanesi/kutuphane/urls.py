@@ -11,6 +11,7 @@ urlpatterns = [
     path('atiklist/<str:atikkind>', views.atik_list,name="atiklist"),
     path('atikkod/<int:id>', views.atikcode,name="atikcode"),
     path('atikuretimi/<int:id>', views.atik_uretimi,name="atik_uretimi"),
+    path('contact', views.contact,name="atikcode")
    
     
 

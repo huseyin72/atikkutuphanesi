@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     {% load static %}
         <link rel="stylesheet" href="{% static 'navbar.css' %}">
@@ -18,34 +21,70 @@
 </head>
 
 <body>
-   <nav> 
+    
+        <nav id="nav">
+            <div class="upBanner">
+                <div class="logoSide">
+                    
+                    
+                    <img class="logopng" src="{%static 'imgs/atik.png'%}" alt="" srcset="">
+                </div>
+                <div class="listSide">
+                    <ul>
+                        <li><a href="">anasayfa</a></li>
+                        <li><a class="clickable" href="">atık listesi <i id="arrow" style="margin: 0; padding: 0; color: #1f4e6e; background-color: white;" class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="">bize ulaşın</a></li>
+                        <li><a href="">hakkımızda</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+            <div class="middleLine"></div>
+            <div class="bottom_banner">
+                <ul class="associate init">
+                    
+                </ul>
+            </div>
+        </nav>
+    
+   <!-- <nav> 
         <div class="banner1">
-            <div class="logo">
-               <!--  <img src="imgs/SDG Wheel_WEB.png" alt="" srcset=""> -->
-                <!-- <h4>ATIKKÜTÜPHANESİ</h4> -->
-               <!--  <img style="height: 6rem; width: 14rem;" src="{%static 'imgs/4yeni.png'%}" alt="" srcset=""> -->
-                <img style="height: 6rem; width: 14rem;" src="{%static 'imgs/yeni5.png'%}" alt="" srcset="">
-                
-               
-            </div>
-            <ul class="ul">
-                <li><a  class="home" href="">Anasayfa</a></li>
-                <li><a class="a1" href="works">Projeler</a></li>
-                <li><a class="a1" href="about">Hakkımızda</a></li>
-            </ul>
             
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
-        <div class="middleLine">
+
+             <div style="position: relative">
+
+                <div class="banner1">
+                    <div class="logo">
+                          <img src="imgs/SDG Wheel_WEB.png" alt="" srcset=""> 
+                          <h4>ATIKKÜTÜPHANESİ</h4> 
+                          <img style="height: 6rem; width: 16rem;" src="{%static 'imgs/4yeni.png'%}" alt="" srcset=""> 
+                         <img class="logopng" src="{%static 'imgs/atik.png'%}" alt="" srcset="">
+                         
+                      </div>
+                    <ul class="ul">
+                        <li><a  class="home" href="">Anasayfa</a></li>
+                        <li id="dropDownLi"><a class="a1 a2" href="">Atık Türleri <i id="arrow" style="margin: 0; padding: 0; color: #1f4e6e; background-color: white;" class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a class="a1" href="contact">Bize Ulaşın</a></li>
+                        <li><a class="a1" href="about">Hakkımızda</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="middleLine">
            
+                </div>
+
+                <div class="navDrop" style="position: absolute; width: 100wv; height: 1rem;background-color: #1f4e6e;">
+                    
+                
+
+             </div>
+            
         </div>
-        <div class="navDrop">
-            <ul class="navDropUl">
-               <!--  <li><a href="">atık</a></li>
+       
+         <div class="navDrop">
+            <div style="width: 100vw; height: 1rem; background-color: #1f4e6e;"></div>
+            <ul id="blue" class="navDropUl">
+                 <li><a href="">atık</a></li>
                 <li><a href="">atık</a></li>
                 <li><a href="">atık</a></li>
                 <li><a href="">atık</a></li>
@@ -53,12 +92,12 @@
                 <li><a href="">atık</a></li>
                 <li><a href="">atık</a></li>
                 <li><a href="">atık</a></li>
-                <li><a href="">atık</a></li> -->
+                <li><a href="">atık</a></li> 
             </ul>
         </div>
 
         
-    </nav>
+    </nav> -->
     <script src="{% static 'js/navbar.js' %}"></script>
 </body>
 
