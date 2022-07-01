@@ -16,7 +16,7 @@ function atikAdd(){
         a.innerText=item;
         newLi.appendChild(a);
         ul.appendChild(newLi);
-        console.log("burası calısıoyur");
+        
         
 
     })
@@ -28,8 +28,9 @@ navSlide = () =>{
     
 
 };
+atikAdd();
 
-clickable.addEventListener("click", (e)=>{
+/* clickable.addEventListener("click", (e)=>{
     if(ul.classList.contains("init")){
         ul.classList.remove("init");
         ul.classList.add("second");
@@ -55,7 +56,7 @@ clickable.addEventListener("click", (e)=>{
 
     );
 
-
+ */
 
 
 //responsive taşıma 

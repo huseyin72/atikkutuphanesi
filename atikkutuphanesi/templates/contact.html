@@ -1,5 +1,29 @@
 {% extends "layout.html" %}
 {% block body %}
+{% load static %}
+        <link rel="stylesheet" href="{% static 'contact.css' %}">
+<div class="contact-container">
+
+     <h1>Bize ulaşın</h1>
+     <form id="form" method="post" >
+          {% csrf_token %}
+          {% for msg in messages  %}
+          <div style="background-color:green; color:white; border-radius: 0.7rem;padding: 0.6rem; opacity: 0.7;">{{msg}}</div>
+          
+          {% endfor %}
+          <label for="name">İsminizi giriniz</label>
+          <input id="name" name="name" type="text">
+          <label for="email">Email adresinizi giriniz</label>
+          <input type="text" name="email" id="email">
+          <label for="message">Mesajınızı giriniz</label>
+          <textarea name="message" id="message" cols="50" rows="10"></textarea>
+          <button id="button" type="submit" >gönder</button>
+
+
+
+     </form>
+   
+</div>
      
 
 {% endblock body %}

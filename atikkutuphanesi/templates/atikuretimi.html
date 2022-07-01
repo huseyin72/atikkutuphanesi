@@ -2,44 +2,90 @@
 {% block body %}
 {% load static %}
         <link rel="stylesheet" href="{% static 'atikuretimi.css' %}">
+        
 <div class="mainOfAU">
+    
+    
     <div class="atikUretimiMain">
+        <div>
+            {% if data.urlName == "metalmadenciligi" or  data.urlName == "digermadenler" %}
+                <a  class="topmenu" href="http://127.0.0.1:8000/atikuretimi/metalmadenciligi">Metal madenciliği</a>
+                <a class="topmenu" href="http://127.0.0.1:8000/atikuretimi/digermadenler">Diger madenler</a>
+            {% elif data.urlName == "tarimhayvancilik" %}
+
+            {% elif data.urlName == "imalat" or  data.urlName == "termik" %}
+                <a  class="topmenu" href="http://127.0.0.1:8000/atikuretimi/imalat">İmalat sanayii</a>
+                <a class="topmenu" href="http://127.0.0.1:8000/atikuretimi/termik">Termik santral</a>
+            {% elif data.urlName == "aritma" or  data.urlName == "atikyakma" or data.urlName == "aku" or data.urlName == "geridonusum" %}
+                <a  class="topmenu" href="http://127.0.0.1:8000/atikuretimi/aritma">Arıtma tesisi</a>
+                <a class="topmenu" href="http://127.0.0.1:8000/atikuretimi/atikyakma">Atık yakma tesisi</a>
+                <a  class="topmenu" href="http://127.0.0.1:8000/atikuretimi/aku">Akü geri kazanım tesisi </a>
+                <a class="topmenu" href="http://127.0.0.1:8000/atikuretimi/geridonusum">Geri dönüşüm ve diğer</a>
+            
+            {% elif data.urlName == "liman" or  data.urlName == "alisveris" or  data.urlName == "akaryakit" or  data.urlName == "turistik" or  data.urlName == "arac" %}
+                <a  class="topmenu" href="http://127.0.0.1:8000/atikuretimi/liman">Liman işletmeleri</a>
+                <a class="topmenu" href="http://127.0.0.1:8000/atikuretimi/alisveris">Alış-veriş merkezi</a>
+                <a  class="topmenu" href="http://127.0.0.1:8000/atikuretimi/akaryakit">Akaryakıt istasyonu </a>
+                <a class="topmenu" href="http://127.0.0.1:8000/atikuretimi/turistik">Turistik tesis</a>
+                <a class="topmenu" href="http://127.0.0.1:8000/atikuretimi/arac">Araç tamirhaneleri</a>
+
+            {% comment %} diğer kodların da buton biçimini ekle {% endcomment %}
+            
+
+        
+            {% else %}
+            {% endif %}</div>
         <div class="titleAtikUretimi">
-            <h1>{{obje.atikName}}</h1>
+            <h1>{{data.mainName}}</h1>
             <hr>
             
 
 
     
         </div>
+        <h2>Proses özellikleri</h2>
+        <hr>
         <div class="middleAtikUretimi">
             <div class="contentOfIt">
-                <p>{{obje.prosesFeatures}}</p>
+                {{data.prosesFeatures}}
+               
                 
 
             </div>
 
-            <h3>proses kaynaklı atıklar</h3>
+            <h2>Proses kaynaklı atıklar</h2>
             <hr>
             <ul class="mainCodes">
-                {% for i in kodlar  %}
+                {% for i in data.prosesKaynakli  %}
                     <li><a href="">{{i}}</a></li>
             
                 {% endfor %}
 
             </ul>
-            <h3>oluşabilecek diğer atıklar</h3>
+            <h2>Oluşabilecek diğer atıklar</h2>
             <hr>
             <ul class="otherCodes">
-                {% for i in kodlar  %}
-                    <li>{{i}}</li>
+                
+                {% for i in data.olusabilecek_diger  %}
+                     <li><a href="">{{i}}</a></li>
             
                 {% endfor %}
 
             </ul>
+            <img src="{% get_media_prefix %}{{ata_final.pdf}" alt="File 2"> 
+            <a id="download" href="">selam</a>
+            <a download="{{data.files}}" href="">dene</a>
+            <script>
+                const download = document.getElementById("download");
+                var theUrl = "{{data.files}}"
+                console.log(theUrl);
+                download.download  ="{% get_media_prefix %}{{ata_final.pdf}";
 
 
-            
+            </script>
+
+           
+             
 
         </div>
     </div>

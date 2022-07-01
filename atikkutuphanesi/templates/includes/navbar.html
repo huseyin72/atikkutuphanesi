@@ -14,6 +14,8 @@
 
     {% load static %}
         <link rel="stylesheet" href="{% static 'navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'main.css' %}">
+
 
         
 
@@ -21,29 +23,40 @@
 </head>
 
 <body>
+    <style>
+        
+        
+    </style>
     
         <nav id="nav">
             <div class="upBanner">
                 <div class="logoSide">
                     
                     
-                    <img class="logopng" src="{%static 'imgs/atik.png'%}" alt="" srcset="">
+                    <img class="logopng" src="{%static 'imgs/last.png'%}" alt="" srcset="">
                 </div>
                 <div class="listSide">
                     <ul>
-                        <li><a href="">anasayfa</a></li>
-                        <li><a class="clickable" href="">atık listesi <i id="arrow" style="margin: 0; padding: 0; color: #1f4e6e; background-color: white;" class="fa-solid fa-caret-down"></i></a></li>
-                        <li><a href="">bize ulaşın</a></li>
-                        <li><a href="">hakkımızda</a></li>
+                        <li><a href="http://127.0.0.1:8000/">Anasayfa</a></li>
+                        <li class="special" ><a class="clickable" href="">Atık listesi <i id="arrow" style="margin: 0; padding: 0; color: #1f4e6e; background-color: white;" class="fa-solid fa-caret-down"></i></a>
+                            <div class="div1">
+                                <ul class="associate">
+                                   
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="http://127.0.0.1:8000/training">Eğitimler</a></li>
+                        <li><a href="http://127.0.0.1:8000/contact">Bize ulaşın</a></li>
+                        <li><a href="http://127.0.0.1:8000/about">Hakkımızda</a></li>
                     </ul>
                 </div>
     
             </div>
             <div class="middleLine"></div>
-            <div class="bottom_banner">
+            {% comment %} <div class="bottom_banner">
                 <ul class="associate init">
                     
-                </ul>
+                </ul> {% endcomment %}
             </div>
         </nav>
     

@@ -1,6 +1,6 @@
 
 #nav{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
   min-width: 100vw;
   min-height: 3rem;
@@ -20,7 +20,7 @@
 
 }
 .logopng{
-  height: 2rem; 
+  height: 2.5rem; 
   width: 9rem;
   margin-right:20vw;
 
@@ -92,7 +92,7 @@
   background-color:#214863;
 
 }
-@media screen and (max-width:850px){
+@media screen and (max-width:650px){
   .logoSide{
     margin: 0.5rem;
   }
@@ -134,6 +134,46 @@
 
 
 }
+@media (max-width:850px) and (min-width:650px) {
+  .logopng{
+    width: 8rem;
+    height: 2rem;
+    margin-right:1rem;
+
+  }
+}
+ 
+
+/* drop down yeni şekli ile */
+.special{
+  position: relative;
+}
+.div1{
+  position: absolute;
+  top: 1.5rem;
+  left: -20rem;
+  width: auto;
+  z-index: 100;
+  background-color:#00689d;
+  border-radius: 2rem;
+  display: none;
+}
+.div1 ul{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.special:hover .div1{
+  display: grid;
+  
+}
+
+
+
+
+
+
+
+
 
 /* nav{
   position:sticky;

@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="{% static 'atikcode.css' %}">
 
   <div class="homeform">
-        <div class="titlehomepage">
+        {% comment %} <div class="titlehomepage">
             <h3 class=" atikcode">
 
                 ATIK KODU
@@ -14,13 +14,27 @@
 
         </div>
         
-        <hr>
-        <div class="containerMain">
+        <hr> {% endcomment %}
+        <div class="containerMain" >
+            <!-- <div class="directoryPart" style="margin-left: 3rem; width: 80vw; "  >
+                <h1>Site rehberi</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt necessitatibus voluptas dignissimos voluptatem itaque nihil praesentium optio ut temporibus magni quis, aliquid fuga, consequuntur qui natus veritatis ea beatae vero debitis reprehenderit aliquam possimus. Obcaecati molestiae eaque nam blanditiis explicabo distinctio sequi voluptatibus eveniet, odit totam eligendi eum accusantium repudiandae quis autem consequuntur magni ex nesciunt facere labore possimus in? Neque consectetur, magnam reprehenderit repellat nostrum quibusdam similique nesciunt sed dolor totam. Aliquid id quisquam inventore voluptate quam cumque nulla autem quo voluptatem rerum? Debitis doloremque reprehenderit perspiciatis quia, dolor accusantium fugit. Voluptatum, vitae quisquam? Maiores error autem adipisci a!</p>
+                <a style="color: red ;" href="#part1">click</a>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, ad neque! Adipisci odio expedita laboriosam. At ad maxime dicta debitis dignissimos sapiente amet iste? Distinctio quod sequi aperiam incidunt veniam!</p>
+                <a style="color: red ;" href="#part2">click</a>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus suscipit nisi voluptates, iure maxime enim. Optio debitis fugiat, ducimus voluptas odio nam esse deleniti quis, impedit doloribus hic perspiciatis rerum.</p>
+                <a style="color: red ;" href="#part3">click </a>
+
+
+            </div> -->
+            <hr>
            
-            <div class="dropPart">
-                <form action="" class="dropForm">
+            <div class="dropPart" id="part1">
+                <form style="margin-bottom: 4rem;" action="" class="dropForm">
                     <div class="dropTitle">
-                        <h3>atık kodunuzu seçiniz.</h3>
+                        <h3 style="font-size: 2rem;">Atık kodunu seçiniz.</h3>
                     </div>
                     <div class="dropMiddle">
                         <select  name="" class="dropselect" id="drop1">
@@ -45,8 +59,49 @@
                 </form>
 
             </div>
+            <hr>
             <!-- buttons part -->
-             <div class="formDiv">
+
+            <div class="formDiv" id="part2" style="margin:2rem;">
+                <h5 style="font-size: 2rem;">Hangi atık üreticisi tipi sizi tanımlıyor?</h5>
+                <div class="gridButtonPart">
+                    <a href="http://127.0.0.1:8000/atikuretimi/metalmadenciligi" style="background-color: rgb(221, 166, 58);" class="button_click">Maden</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/tarimhayvancilik" style="background-color: rgb(229, 36, 59);"  class="button_click">Tarım/Hayvancılık</a>
+                    
+                    <a href="http://127.0.0.1:8000/atikuretimi/imalat" style="background-color: rgb(255, 58, 33);"  class="button_click">Endüstri tesisi</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/insaat" style="background-color: rgb(38, 189, 226);"  class="button_click">İnşaat</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/saglik" style="background-color: rgb(253, 105, 37);"  class="button_click">Sağlık kuruluşu/Veteriner</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/aritma" style="background-color: rgb(25, 72, 106);"  class="button_click">Atık su/Su yönetim tesisleri</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/egitim" style="background-color: rgb(0, 104, 157);"  class="button_click">Eğitim kurumları/Yurtlar</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/terminal" style="background-color: rgb(197, 25, 45);"  class="button_click">Terminaller</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/ev" style="background-color: rgb(10, 151, 217);"  class="button_click">Ev/apartman/site</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/kamu" style="background-color: rgb(79, 159, 56);"  class="button_click">Kamu kurumu</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/liman" style="background-color: rgb(252, 195, 11);"  class="button_click">Hizmet sektörü</a>
+                    <a href="http://127.0.0.1:8000/atikuretimi/askeri" style="background-color: rgb(28, 96, 9);"  class="button_click">Askeri birlikler</a>
+                    
+                    
+                    
+                    
+                </div>
+
+
+            </div>
+            <hr>
+            <div id="part3" style="margin: 2rem;">
+                <h1>Atık türününüzü seçiniz</h1>
+                <div class="part3-container">
+                    <a class="aOnIndex" href="">Atık pil ve akü</a>
+                    <a class="aOnIndex" href="">Atık yağ</a>
+                    <a class="aOnIndex" href="">Ambalaj atıkları</a>
+                    <a class="aOnIndex" href="">Atık lastik</a>
+                    <a class="aOnIndex" href="">Tehlikeli atık</a>
+                    <a class="aOnIndex" href="">Biyobozunur atık</a>
+                    <a class="aOnIndex" href="">Bitkisel atık yağ</a>
+                    <a class="aOnIndex" href="">Atık elektrikli elektronik aletler</a>
+                    <a class="aOnIndex" href="http://127.0.0.1:8000/atiklist/tibbiatik">Tıbbi atık</a>
+                <div>
+            </div>
+             <!-- <div class="formDiv">
                 <h5>hangi atık üreticisi tipi sizi tanımlıyor?</h5>
                <div id="form">
 
@@ -79,7 +134,7 @@
                     
                 </div>
                 <div class="button-main">
-                    <div style="background-color: rgb(25, 72, 106);" class="buttonWithDrop" id="button1">Atık/Atık su/Su yönetim tesisleri atıkları </div>
+                    <div style="background-color: rgb(25, 72, 106);" class="buttonWithDrop" id="button1">Atık/Atık Su/Su yönetim tesisleri atıkları </div>
                     <div class="block"  >
                         <a href="">Arıtma tesisi</a>
                         <a href="">Atık yakma tesisi</a>
@@ -121,7 +176,7 @@
                 
                </div>
                 
-            </div>
+            </div> -->
         </div>
         
         

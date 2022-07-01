@@ -1,7 +1,7 @@
 
 
-
-class companies:
+from django.db import models
+""" class companies:
     def __init__(self,atikName,prosesFeatures,) -> None:
         self.atikName = atikName
         self.prosesFeatures = prosesFeatures
@@ -110,4 +110,23 @@ objee = [113,denedim]
 
 class NavbarAtikListesi:
     def __init__(self) -> None:
-        pass
+ """        
+class buttonPart(models.Model):
+    mainName = models.CharField(max_length=100)
+    prosesFeatures = models.TextField(max_length=1000)
+    urlName = models.CharField(max_length=100)
+    atikoneri = models.TextField(max_length=1000,default="")
+    nace = models.TextField(max_length=1000,default="")
+    files = models.FileField(default="")
+    prosesKaynakli = models.TextField(max_length=1000,default="")
+    olusabilecek_diger = models.TextField(max_length=1000,default="")
+    
+""" class prosesKaynaklıAtıklar(models.Model):
+    upperMark = models.CharField(max_length=100,help_text="metalmadenciligi")
+    selfMark = models.CharField(max_length=100,help_text="01-01-01")
+    selfContent = models.TextField(max_length=350)
+class olusabilecek_diger_atıklar(models.Model):
+    upperMark = models.CharField(max_length=100,help_text="metalmadenciligi")
+    selfMark = models.CharField(max_length=100,help_text="01-01-01")
+    selfContent = models.TextField(max_length=350)
+ """

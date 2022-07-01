@@ -120,3 +120,24 @@
      color:red;
      text-decoration: none;
 }
+
+#atik{
+     margin: 1rem 0rem;
+     height: 2rem;
+}
+#atik2{
+     margin: 1rem 0rem;
+     height: 2rem;
+}
+#contentUl{
+     background-color: #F0F0F0;
+     padding: 3px;
+     margin-bottom: 2rem;
+}
+.theA {
+     color: red;
+     margin-bottom: 0.8rem;
+}
+.theA:hover{
+     color: rgb(15, 15, 190);
+}
