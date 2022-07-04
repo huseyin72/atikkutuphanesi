@@ -1,93 +1,191 @@
 {% extends "layout.html" %}
 {% block body %}
 {% load static %}
-<link rel="stylesheet" href="{% static 'lastcode.css' %}">
+<!-- <link rel="stylesheet" href="{% static 'lastcode.css' %}"> -->
+
+
+<style>
+    .mainMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    min-height: 100vh;
+
+}
+    .wastetype{
+        width: 80vw ;
+        background-color: salmon;
+        color: white;
+        padding-left: 1rem;
+
+    }
+    .wastename h1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+    }
+    .dangerous-d{
+        border: 1px solid black;
+        width: 60vw;
+        min-height: 5vh;
+        display: flex;
+    }
+    .dangerous-d-c1{
+        flex: 1;
+        border-right: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .dangerous-d-c2{
+        flex: 1;
+        border-right: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+
+    }
+    .dangerous-d-c3{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 255);
+
+    }
+    .warning-div{
+        display: flex;
+        width: 60vw;
+        height: 20vh;
+        
+        border: 1px solid black;
+        margin-top: 2rem;
+    }
+    .warning-div img{
+        height: 20vh;
+    }
+
+
+    .div-{
+        width: 80vw;
+        padding-left: 10vw;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        
+    }
+    .p-{
+        margin-top: 1rem;
+    }
+    {% if data.wasteType == "1" %}
+        .dangerous-d-c3{
+            background-color:white;
+
+        }
+    {% elif data.wasteType == "2" %}
+        .dangerous-d-c2{
+            background-color:white;
+
+        }
+
+    
+    {% else %}
+    {% endif %}
+</style>
 
 <div class="mainMain">
-    <div class="mainOfLastCode">
-        <div class="itsType">tıbbi atık</div>
-        <h1>baslık</h1>
-        <div class="atikKind">
-            <div class="typeOne"></div>
-            <div class="typeTwo"></div>
-            <div class="typeThree"></div>
-        </div>
-        <div class="warning">DİKKAT!</div>
-        <div class="symbol">
-            <div class="symbolPhoto">
-                <img class="tehlike"src="{% static 'imgs/tehlike.png' %}" alt="" srcset="">
-            </div>
-            <div class="contentOfSymbol">
-                Bu başlık altındaki atıkların kesici ve delici özelliği nedeniyle; atığı atan, toplayan, taşıyan, atık yönetimi işinde görev alan, atıkla ilişkili alanların temizliğinde çalışan vd. personelin yaralanmasına yol açması muhtemeldir. 
-            </div>
-        </div>
-        <div class="whereAccurs">
-            <h2 class="whereAccursTitle">Bu koda sahip atıklar nerede oluşur ?  </h2>
-            <p>Bu koda sahip atıklar sadece insan sağlığı ile ilgili hizmetlerde oluşur.
-                Hastaneler başta olmak üzere, revirler, diyaliz merkezi, fizik tedavi merkezi, poliklinik, kan merkezi, acil müdahale birimleri, mikrobiyoloji laboratuvarları, diş hekimliği vb. özel klinikler, insan sağlığına yönelik araştırmalar yapan kuruluşlar, dövme salonları, akupunktur merkezleri.
-                </p>
-        </div>
-        <div class="howDefined">
-            <h2 class="howDefinedTitle">Bu koda sahip atıkları nasıl tanımlarız ? </h2>
-            <p>Her türlü girişim iğnesi; enjeksiyon, damar yolu açma, dövme, akupunktur vb. işlemlerde kullanılan iğneler, laboratuvarlarda içerisinde numune bulunan cam, metal, sert plastik, kompozit malzemenin kırılması durumunda oluşan kırık malzemeler, lam-lamel benzeri sivri uçlu malzemelerin atıkları, her türlü kesik atma malzemeleri, kesici aletler.</p>
-        </div>
-        <div class="whichLegislation">
-            <h2>Bu atık hangi mevzuat ile ilişkilidir ? </h2>
-            <li class="legislationlist">
-                <ul>Atık Yönetimi Yönetmeliği (Resmi Gazete 29314, 02.04.2015)</ul>
-                <ul>Tıbbi Atıkların Kontrolü Yönetmeliği (Resmi Gazete 29959, 25.01.2017)</ul>
-            </li>
-
-        </div>
-        <!-- tabloyu gir  -->
-        <div class="howToReduce">
-            <h2>Bu atık nasıl kaynağında azaltılabilir ?</h2>
-            <p>Kesici-delici nitelikteki atıkların daha az oluşması için uygulanabilecek en basit yöntem, öncelikle çalışma alanının temiz ve düzenli tutulmasıdır. Bu sayede sağlık hizmetlerinde kullanılan malzemelerin kırılıp parçalanması sonucunda oluşabilecek kesici-delici atık miktarı önlenebilir.   
-                Kesici-delici atık kutuları sadece görevli personelin erişimine uygun yerlerde bulundurulmalıdır. Bu tür atıklara özel kutuların içerisine başka bir atık atılmamalıdır.
-                </p>
-
-        </div>
-        <div class="howToCollect">
-            <h2>Bu atık oluştuğu yerde nasıl biriktirilmelidir ?</h2>
-            <p>Kesici-delici atıklar delinmeye, yırtılmaya, kırılmaya ve patlamaya dayanıklı, su geçirmez ve sızdırmaz, açılması ve karıştırılması mümkün olmayan, üzerinde siyah renkli “Uluslararası Biyotehlike” amblemi ile siyah harflerle yazılmış “DİKKAT! KESİCİ ve DELİCİ TIBBİ ATIK” ibaresi taşıyan plastik veya aynı özelliklere sahip lamine kartondan yapılmış kutu veya konteynerda biriktirilmelidir.</p>
-        </div>
-        <div class="secondPhoto">
-            <img class="tehlike"src="{% static 'imgs/tehlike2.jpg' %}" alt="" srcset="">
-            
-            <p>Bu atıkların toplanması, taşınması vb. yönetiminden sorumlu personelin, atık kaynaklı enfeksiyona maruziyetini önleyecek eldiven, çizme, maske, gözlük, tulum vb. kişisel koruyucu donanım kullanması zorunludur.
-                <br> <br>
-
-                Bu atıkların biriktirildiği, taşındığı, geçici depolandığı kap/konteynır/alanların biyolojik tehlike sembolü işareti taşıması zorunludur.
-                </p>
-            
-        </div>
-        <div class="howToTrasport">
-            <h2>Bu atık; atık tesisine nasıl taşınmalıdır ?</h2>
-            <ul class="companyListTransport">
-                <li><a href="">Lisanslı taşıma firmaları listesi</a></li>
-            </ul>
-        </div>
-        <div class="whereGo">
-            <h2>Bu atık; atık tesisine nasıl taşınmalıdır ?</h2>
-            <ul class="companyListWhereGo">
-                <li><a href="">Lisanslı taşıma firmaları listesi</a></li>
-                <img src="{{obje.img2}}" alt="" srcset=""> <!-- burda kaldım -->
-                
-            </ul>
-        </div>
-
-
-     
-
-        {% comment %} <h1 class="atikTitle">{{atikcode.atikname}}</h1> {% endcomment %}
-    <ul class="atikFeatures">
-       {% comment %}  <li>{{atikcode.atik_features}}</li>
-        <li>{{atikcode.where_to_go}}</li>
-        <li>{{atikcode.atik_advice}}</li>
-        <li>{{atikcode.klavuz}}</li> {% endcomment %}
-    </ul>
+    <div  class="wastetype">{{data.itsUpTitle}}</div>
+    <div class="wastename">
+        <h1>{{data.wasteName}}</h1>
     </div>
+    <div class="dangerous">
+        <div class="dangerous-d"> 
+            <div class="dangerous-d-c1" >Atık türü</div>
+            <div class="dangerous-d-c2" >Tehlikeli</div>
+            <div class="dangerous-d-c3">Tehlikesiz</div>
+        </div>
+    </div>
+    <div class="warning">
+        <div class="warning-div">
+            
+            <img style="flex: 1; border-right: 1px solid black; padding: 0.2rem;"  src="{{data.firstImage.url}}" alt="" srcset="">
+            <div style="flex: 3; padding: 1rem;">{{data.inBox}}</div>
+        </div>
+    </div>
+    <div class="whereaccur">
+        <div class="div-">
+            <h2>Bu koda sahip atıklar nerde oluşur?</h2>
+            <p class="p-">{{data.whereAccur}}</p>
+        </div>
+    </div>
+    <div class="howdefine">
+        <div class="div-">
+            <h2>Bu koda sahip atıkları nasıl tanımlarız? </h2>
+            <p class="p-">{{data.howDefine}}</p>
+        </div>
+    </div>
+    <div class="legislation">
+        <div class="div-" >
+            <h2>Bu atık hangi mevzuat ile ilişkilidir? </h2>
+            <ul>
+                <li class="p-">{{data.legislation1}}</li>
+                <li class="p-">{{data.legislation2}}</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wastefeatures">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="howreduce">
+        <div class="div-">
+            <h2>Bu atık nasıl kaynağında azaltılabilir? </h2>
+            <p class="p-">{{data.howReduce}}</p>
+        </div>
+        
+    </div>
+    <div class="howaccumulate">
+        <div class="div-">
+            <h2>Bu atık oluştuğu yerde nasıl biriktirilmelidir? </h2>
+            <p class="p-">{{data.howAccumulate}}</p>
+            <img style="height:6rem ; width:auto" class="p-" src="{{data.secondImage.url}}" alt="" srcset="">
+        </div>
+
+    </div>
+    <div class="warnig2">
+        <div class="div-">
+            <ul>
+                <li class="p-">{{data.warningMessage}}</li>
+                <li class="p-">{{data.warningMessage2}}</li>
+            </ul>
+        </div>
+    </div>
+    <div style="margin-bottom: 5rem;" class="file">
+        <div class="div-">
+            <h2>Bu atık; atık tesisine nasıl taşınmalıdır?</h2>
+            <a class="p-" href="{{data.file1.url}}" download="{{data.file1.url}}">download1</a>
+            <h2 style="margin-top: 3rem;">Atığımı nereye teslim etmeliyim?    </h2>
+            <a class="p-" href="{{data.file2.url}}" download="{{data.file1.url}}">download2</a>
+        </div>
+        
+    </div>
+    
 </div>
+
+
+
+
+
+
+  
+
 
     
 {% endblock body %}

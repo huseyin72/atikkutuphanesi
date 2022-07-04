@@ -1,8 +1,12 @@
+import imp
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path,include,re_path as url
+from django.conf import settings
+from django.conf.urls.static import static
 from . import views
-#from django.conf.urls import url
+
 from django.views.static import serve
+
 
 
 urlpatterns = [
@@ -14,6 +18,9 @@ urlpatterns = [
     path('atiklist/<str:atikkind>', views.atik_list,name="atiklist"),
     path('atikkod/<int:id>', views.atikcode,name="atikcode"),
     path('atikuretimi/<str:atikuretimi>', views.atik_uretimi,name="atik_uretimi"),
+    
+   
+     
     path('contact', views.contact1, name="contact")
    
     

@@ -1,12 +1,29 @@
 
-from django.http import HttpResponse
+
+
+
+from glob import glob
+from urllib import response
+from wsgiref.util import FileWrapper
+from django import http
+from django.conf import settings
+from django.http import Http404, HttpResponse
+from django.http import StreamingHttpResponse
 from django.shortcuts import redirect, render
 from django.contrib import messages
+import mimetypes
+import os
 
 
 
 
-from kutuphane.models import Atikcodes
+
+
+
+
+
+
+from kutuphane.models import Atikcodes2
 from kutuphane.atiktypesmodels import Atiktypes,firstSteps,secondSteps,thirdSteps
 from . import models2
 from . import bannermodel
@@ -118,11 +135,39 @@ def atik_list(request,atikkind):
     
 
 def atikcode(request,id):
-    atikcode = Atikcodes.objects.first()
+    codes = Atikcodes2.objects.filter( idNo = id)
+    codess = Atikcodes2()
+    for i in codes:
+        codess.idNo = i.idNo
+        codess.itsUpTitle = i.itsUpTitle
+        codess. wasteName = i. wasteName
+        codess.wasteType = i.wasteType
+        codess.firstImage = i.firstImage
+        codess.inBox = i.inBox
+        codess.whereAccur = i.whereAccur
+        codess.howDefine = i.howDefine
+        codess.legislation1 = i.legislation1
+        codess.legislation2 = i.legislation2
+        codess.bioprocessability = i.bioprocessability
+        codess.materialRecycling= i.materialRecycling
+        codess.flammability = i.flammability
+        codess.howReduce = i.howReduce
+        codess.howAccumulate = i.howAccumulate
+        codess.secondImage = i.secondImage
+        codess.warningMessage = i.warningMessage
+        codess.warningMessage2 = i.warningMessage2
+        codess.file1 = i.file1
+        codess.file2 = i.file2
+        
+        
+    return render(request,"atikcode.html",{"data": codess})
+   
+   
     
-    """ if(atikcode!=None): """
-    print(atikcode)
-    return render(request,"atikcode.html",{"obje":atikcode})
+
+    
+    
+    
 
 
 
@@ -146,11 +191,29 @@ def atik_uretimi(request,atikuretimi):
     return render(request,"atikuretimi.html",{"data":theObject})
 
 
+def download(request,path):
+   
+    file_path = os.path.join(settings.MEDIA_ROOT,path)
+    if os.path.exists(file_path):
+        with open(file_path,"rb")as fh:
+            response = HttpResponse(fh.read(),content_type = "applications/files")
+            response["Content-Disposition"] = "inline;filename=" + os.path.basename(file_path)
+            return response
+    raise Http404
+
+
+
+
+
+
+
+
+
+
 def contact1(request):
     print(request.method)
     
     if request.method == "POST":
-        print("girdim")
         form = contact()
         name = request.POST.get("name")
         email = request.POST.get("email")
@@ -163,14 +226,36 @@ def contact1(request):
         
         messages.success(request,"Mesajınız başarıyla iletildi")
         return redirect("/contact")
-    print("selam")
-
-  
-    
-         
-
+   
     return render(request,"contact.html")
 
 
-    
+
+
+
+
+
+#def downloadfile(request,path):
+    #file_path = os.path.join(path)
+    """ with open(file_path,"rb") as fh:
+            response = HttpResponse(fh.read(),content_type="application/files")
+            response["content-disposition"] = "inline;filename="+ os.path.basename(file_path)
+            print(os.path.basename(file_path))
+            
+            return response """
+
+    #base_dir = "/Users/huseyinozdemir/Desktop/atikkutuphanesi/atikkutuphanesi/media/"
+    #filename = "bale.jpg"
+    #thefile = os.path.join(path)
+    #filepath = base_dir + filename
+     
+    #filename = os.path.basename(thefile)
+    #chunk_size = 8192
+    #response = StreamingHttpResponse(FileWrapper(open(thefile,"rb"),chunk_size),
+    #content_type=mimetypes.guess_type(thefile)[0])
+    #response["content-length"] = os.path.getsize(thefile)
+    #response["content-disposition"] = ("attachment;filename=%s" %filename)
+    #print("*************************************************")
+    #return response
+
 

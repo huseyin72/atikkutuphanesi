@@ -4,13 +4,13 @@
         <link rel="stylesheet" href="{% static 'atikcode.css' %}">
         <style>
 
-                
+                /* 
                 .container-main{
                      
                        
                 background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url("{% static 'imgs/nareta.jpg' %}");
                 background-size: cover;
-                /* animation: move; */
+                 animation: move; 
                 animation-timing-function: ease;
                 animation-delay: 0s;
                 animation-duration: 2s;
@@ -85,12 +85,125 @@
                          background-color: white;
                          color:RGB(68, 184, 172) ;
                  }
-                 
-                 
                 
+                  */
+
+                /* .title-part{
+                        margin-top: 7vh;
+                        margin-bottom: 1rem;
+                        height: 3rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                } */
+                .top-part{
+                        /* margin-top: 10vh; */
+                        margin-top: 7vh;
+                        height: 3rem;
+                        display: flex;
+                        justify-content: space-between;
+                        /* background-color: #dddfd4; */
+                        background-color: whitesmoke;
+
+
+                }
+                .top-part-c{
+                        
+                        height: 3rem;
+                        width: auto;
+                        margin: 0 4rem;
+                }
+                .middle-part{
+                        
+                        margin-top: 2rem;
+                        display: flex;
+                        justify-content: center;
+                }
+                .middle-part-c{
+                        /* border-top: 5px solid #4d4d4d; */
+                        /* background-color:#F8F8FF ; beyazımsı */
+                        /* background-color:#9fa8a3 ; */
+                        /* background-color:#E3E3E3 ; */
+                       /*  background-color:#dddfd4 ; */
+                        /* background-color:#dddfd4; */
+                        background-color: whitesmoke;
+                        min-height: 60vh;
+                        width:95vw;
+                        padding: 1rem;
+                        border-radius: 0.8rem;
+                
+                }
+                .h-class{
+                        font-weight: bold;
+                        font-size: 2rem;
+                }
+                .p-class{
+                        font-weight: bold;
+                        font-size: larger;
+                        margin-top: 0.7rem;
+                }
+                .button-part{
+                        margin-left: 3rem;
+                        margin-top: 5rem;
+                        display: flex;
+                        justify-content: space-around;
+                }
+                .button-part a{
+                        background-color: #828282;
+                        height: 3.5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 20rem;
+                        border-radius: 0.2rem;
+                        transition: background 1.5s;
+                }
+                .button-part a div{
+                        color: white;
+                }
+                .button-part a:hover{
+                        background-color: #6B6B6B;
+                }
         </style>
+
+
+        <div class="container-main" style="min-height: 100vh;">
+                <div class="container">
+                        <!-- <div class="title-part">
+                                <h1 class="title-part-h" >ATIK KÜTÜPHANESİ</h1>
+                        </div> -->
+                        <div class="top-part">
+                                <img class="top-part-c" src="{%static 'imgs/biglogo2.png'%}" alt="" srcset="">
+                                <img class="top-part-c" src="{%static 'imgs/logoguncel3v.png'%}" alt="" srcset="">
+                        </div>
+                        <div class="middle-part">
+                                <div class="middle-part-c">
+                                        <h2 class="h-class">Atık Kütüphanesi’ne hoşgeldiniz!</h2>
+                                        <p class="p-class">Oluşturulan bu dijital kütüphane hizmeti ile atık yönetiminize yardımcı olunması amaçlanmıştır. Ürettiğiniz atığın yönetimini; atık türleri üzerinden kontrol edebilir veya bulunduğunuz sektör başlığı altından atık kodunu bularak, bilgi formlarına ulaşabilirsiniz. Bunlara ek olarak, atığınızın kodunu biliyorsanız, aşağıda bulunan menü yardımı ile bilgi formlarına direkt ulaşım sağlayabilirsiniz.</p>
+                                        <div class="button-part">
+                                                <a href="http://127.0.0.1:8000/wastenavigation/#part1"><div>Atık kodu ile arama yapacağım</div></a>
+                                                <a href="http://127.0.0.1:8000/wastenavigation/#part2"><div>Sektörüme göre arama yapacağım</div></a>
+                                                <a href="http://127.0.0.1:8000/wastenavigation/#part3"><div>Atık türüne göre arama yapacağım</div></a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="footer-part"></div>
+                </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
       
-                <div class="container-main" style="min-width:100vw; min-height:100vh;  ">
+               <!--  <div class="container-main" style="min-width:100vw; min-height:100vh;  ">
                         <div class="directoryPart" style="margin-left: 3rem; max-width: 80vw;  "  >
                                 <h1 class="color">Hoşgeldiniz</h1>
                                 <p class="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt necessitatibus voluptas dignissimos voluptatem itaque nihil praesentium optio ut temporibus magni quis, aliquid fuga, consequuntur qui natus veritatis ea beatae vero debitis reprehenderit aliquam possimus. Obcaecati molestiae eaque nam blanditiis explicabo distinctio sequi voluptatibus eveniet, odit totam eligendi eum accusantium repudiandae quis autem consequuntur magni ex nesciunt facere labore possimus in? Neque consectetur, magnam reprehenderit repellat nostrum quibusdam similique nesciunt sed dolor totam. Aliquid id quisquam inventore voluptate quam cumque nulla autem quo voluptatem rerum? Debitis doloremque reprehenderit perspiciatis quia, dolor accusantium fugit. Voluptatum, vitae quisquam? Maiores error autem adipisci a!</p>
@@ -104,10 +217,10 @@
                 
                 
                             </div>
-                           
+                            -->
                             
                 
-                </div>
+                
                 
 
        

@@ -72,18 +72,7 @@
                 {% endfor %}
 
             </ul>
-            <img src="{% get_media_prefix %}{{ata_final.pdf}" alt="File 2"> 
-            <a id="download" href="">selam</a>
-            <a download="{{data.files}}" href="">dene</a>
-            <script>
-                const download = document.getElementById("download");
-                var theUrl = "{{data.files}}"
-                console.log(theUrl);
-                download.download  ="{% get_media_prefix %}{{ata_final.pdf}";
-
-
-            </script>
-
+            <a  href="{{data.files.url}}" download="{{data.files.url}}">click to download file</a>
            
              
 

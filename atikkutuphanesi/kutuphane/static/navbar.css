@@ -20,8 +20,14 @@
 
 }
 .logopng{
-  height: 2.5rem; 
-  width: 9rem;
+  height: 4rem; 
+  width:auto;
+  
+  /* height: 4rem; 
+  width: auto; yeni logo birinci hali*/
+  padding: 0;
+ /*  width: 9rem; eski*/
+ /*  height: 2.5rem; */
   margin-right:20vw;
 
 }
@@ -42,7 +48,8 @@
 }
 .logoSide{
   
-  margin: 1rem 3rem;
+  /* margin: 1rem 3rem; */
+  margin: 0.2rem 3rem;
   
 }
 
@@ -155,6 +162,7 @@
   width: auto;
   z-index: 100;
   background-color:#00689d;
+  opacity: 0.9;
   border-radius: 2rem;
   display: none;
 }
@@ -408,3 +416,4 @@ color: #19486a;
  */
 
 
+/* anasayfa son eklenen divler */
