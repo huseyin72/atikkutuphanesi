@@ -1,4 +1,4 @@
-.homeform{
+/* .homeform{
     overflow-x: hidden;
 
 }
@@ -278,3 +278,192 @@
 
 }
 
+ */
+ .containerMain{
+     min-height: 100vh;
+     min-width: 100vw;
+     padding: 2rem;
+
+ }
+.dropPart{
+    width: 90vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dropTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.dropTitle h3{
+    font-size: 2.2rem;
+}
+.dropMiddle{
+    display: flex;
+    flex-direction: column;
+}
+.dropMiddle .dropselect{
+    margin-bottom: 1rem;
+    width: 80vw;
+    height: 1.5rem;
+}
+.codeUl{
+    width: 70vw;
+    background-color: whitesmoke;
+    padding: 0.3rem;
+
+}
+.codeUl li a{
+    color: salmon;
+}
+.codeUl li a:hover{
+    color: blue;
+}
+
+/* button part burası  */
+.formDiv{
+    min-height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formDiv-div{
+    display: flex;
+    align-items: center;
+}
+.formDiv-div h3{
+    font-size: 2.2rem;
+    flex: 1;
+
+}
+.gridButtonPart{
+    flex: 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.gridButtonPart a{
+    height: 5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    color: white;
+    border-radius: 0.4rem;
+    opacity: 0.8;
+    
+}
+.gridButtonPart a:hover{
+  font-size: 1.2rem;
+
+}
+
+/* atık türü sayfası  */
+#part3{
+    min-height: 100vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    
+}
+.part3-title{
+    flex: 1;
+}
+.part3-title h3 {
+    font-size: 2.2rem;
+    
+
+
+}
+.part3-buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex: 2;
+   
+
+}
+.part3-buttons a{
+    border: 1px solid black;
+    margin: 1rem;
+    width: 12rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 0.3rem;
+
+}
+
+@media (max-width: 850px) { 
+    .containerMain h3{
+        font-size: 1rem;
+        
+    }
+    /* button parts responsive  */
+    .formDiv-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .gridButtonPart{
+        
+        grid-template-columns:  auto auto;
+
+   
+       
+    }
+    .gridButtonPart a{
+        height: 3rem;
+        margin: 0.5rem;
+        
+        padding: 0.1rem;
+        font-size: 0.5rem;
+        
+        
+        
+    }
+
+    /* son part  */
+    #part3{
+
+       
+        
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    
+    .part3-buttons{
+        
+        grid-template-columns:  auto auto;
+        flex: 5;
+       
+    
+    }
+    .part3-buttons a{
+        
+        margin: 0.5rem;
+        width: 6rem;
+        height: 2rem;
+        font-size: 0.5rem;
+
+        
+       
+        border-radius: 0.3rem;
+    
+    }
+    .part3-title{
+        margin-top: 3rem;
+        height: 2rem;
+        flex: 1;
+    }
+   
+}

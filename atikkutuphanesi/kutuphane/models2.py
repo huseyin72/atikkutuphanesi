@@ -118,8 +118,10 @@ class buttonPart(models.Model):
     atikoneri = models.TextField(max_length=1000,default="")
     nace = models.TextField(max_length=1000,default="")
     files = models.FileField(default="")
-    prosesKaynakli = models.TextField(max_length=1000,default="")
-    olusabilecek_diger = models.TextField(max_length=1000,default="")
+    prosesKaynakli = models.TextField(max_length=1000,default="",help_text="aralarında nokta olacak sekilde ")
+    proseskaynakliId = models.TextField(max_length=1000,default="",help_text="aralarında nokta olacak şekilde örn 34.553.")
+    olusabilecek_diger = models.TextField(max_length=1000,default="",help_text="aralarında nokta olacak sekilde ")
+    olusabilecek_digerId = models.TextField(max_length=1000,default="",help_text="aralarında nokta olacak şekilde örn 34.553.")
     
 """ class prosesKaynaklıAtıklar(models.Model):
     upperMark = models.CharField(max_length=100,help_text="metalmadenciligi")

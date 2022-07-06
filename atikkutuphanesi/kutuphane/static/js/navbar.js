@@ -6,6 +6,8 @@ var atikhref = ["/atiklist#atikpil","/atiklist#atikyag","/sectionpart/atiklist.h
 const ul = document.querySelector(".associate");
 const clickable = document.querySelector(".clickable");
 
+
+
 // atık listesi
 function atikAdd(){
     atikList.forEach(function(item, index){

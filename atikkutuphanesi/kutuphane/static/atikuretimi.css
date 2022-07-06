@@ -35,7 +35,27 @@
     color: white;
     width: 5rem;
 }
-/* #topmenu{
-    margin-left: 10rem;
-    border-bottom: 1px solid #ccc;
-} */
+
+@media (max-width: 850px){
+    .atikUretimiMain a{
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 0.2rem;
+        
+    }
+    .atikUretimiMain div{
+        display: flex;
+        flex-direction: column;
+    }
+    .titleAtikUretimi h1{
+        font-size: 1.2rem;
+
+    }
+    .contentOfIt{
+        font-size: 0.7rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+
+}

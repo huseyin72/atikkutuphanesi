@@ -57,9 +57,11 @@
             <hr>
             <ul class="mainCodes">
                 {% for i in data.prosesKaynakli  %}
-                    <li><a href="">{{i}}</a></li>
+                    <li><a class="proses" href="">{{i}}</a></li>
+                   
             
                 {% endfor %}
+                
 
             </ul>
             <h2>Oluşabilecek diğer atıklar</h2>
@@ -67,11 +69,13 @@
             <ul class="otherCodes">
                 
                 {% for i in data.olusabilecek_diger  %}
-                     <li><a href="">{{i}}</a></li>
+                     <li><a class="diger" href="">{{i}}</a></li>
             
                 {% endfor %}
+               
 
             </ul>
+            
             <a  href="{{data.files.url}}" download="{{data.files.url}}">click to download file</a>
            
              
@@ -79,7 +83,42 @@
         </div>
     </div>
 </div>
+<script>
+    ;
+    var digera = document.getElementsByClassName("diger");
+    
+    
+    var idlist2= [{% for i in data.olusabilecek_digerId %}
+          "{{i}}",
+          
+     {% endfor %}]
+     
+     for (let i = 0; i < digera.length; i++) {
+         digera[i].href = `http://127.0.0.1:8000/atikkod/${idlist2[i]}`; 
+         
 
+     }
+</script>
+
+<script>
+    ;
+    var prosesa = document.getElementsByClassName("proses");
+   
+    
+    var idlist1= [{% for i in data.proseskaynakliId %}
+          "{{i}}",
+          
+     {% endfor %}]
+    
+     for (let i = 0; i < prosesa.length; i++) {
+         prosesa[i].href = `http://127.0.0.1:8000/atikkod/${idlist1[i]}`; 
+         
+
+     }
+
+    
+
+</script>
 
 
 

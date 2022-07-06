@@ -90,6 +90,28 @@
             background-color:white;
 
         }
+        @media (max-width: 850px){
+            .wastename h1{
+                font-size:1.2rem
+            }
+            .warning-div img{
+            height: 10vh;
+            
+        }
+        h2{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.7rem;
+        }
+            
+            
+
+
+
+
+        }
+
 
     
     {% else %}
@@ -111,7 +133,7 @@
     <div class="warning">
         <div class="warning-div">
             
-            <img style="flex: 1; border-right: 1px solid black; padding: 0.2rem;"  src="{{data.firstImage.url}}" alt="" srcset="">
+            <img style="flex: 1; padding: 0.2rem;"  src="{{data.firstImage.url}}" alt="" srcset="">
             <div style="flex: 3; padding: 1rem;">{{data.inBox}}</div>
         </div>
     </div>
@@ -162,17 +184,17 @@
     <div class="warnig2">
         <div class="div-">
             <ul>
-                <li class="p-">{{data.warningMessage}}</li>
-                <li class="p-">{{data.warningMessage2}}</li>
+                <li style="color:red" class="p-">{{data.warningMessage}}</li>
+                <li style="color:red" class="p-">{{data.warningMessage2}}</li>
             </ul>
         </div>
     </div>
     <div style="margin-bottom: 5rem;" class="file">
         <div class="div-">
             <h2>Bu atık; atık tesisine nasıl taşınmalıdır?</h2>
-            <a class="p-" href="{{data.file1.url}}" download="{{data.file1.url}}">download1</a>
+            <a style="color:salmon;" class="p-" href="{{data.file1.url}}" download="{{data.file1.url}}">download1</a>
             <h2 style="margin-top: 3rem;">Atığımı nereye teslim etmeliyim?    </h2>
-            <a class="p-" href="{{data.file2.url}}" download="{{data.file1.url}}">download2</a>
+            <a style="color:salmon" class="p-" href="{{data.file2.url}}" download="{{data.file1.url}}">download2</a>
         </div>
         
     </div>

@@ -184,11 +184,14 @@ def atik_uretimi(request,atikuretimi):
         theObject.files = k.files
         theObject.prosesKaynakli = k.prosesKaynakli.split(".")
         theObject.olusabilecek_diger = k.olusabilecek_diger.split(".")
+        theObject.olusabilecek_digerId = k.olusabilecek_digerId.split(".")
+        theObject.proseskaynakliId = k.proseskaynakliId.split(".")
+
     
     
 
-
-    return render(request,"atikuretimi.html",{"data":theObject})
+   
+    return render(request,"atikuretimi.html",{"data":theObject,})
 
 
 def download(request,path):
