@@ -1,0 +1,61 @@
+.mainOfAU{
+   
+    display: flex;
+    justify-content: center;
+   /*  align-items: center; */
+    height: 100vh;
+    width: 100vw;
+}
+.atikUretimiMain{
+    background-color:#F5F5F5;
+    padding: 1rem;
+    
+
+}
+
+.titleAtikUretimi{
+    /* padding: 2rem; */
+    padding: 2rem 0rem;
+}
+.contentOfIt{
+    margin-bottom: 2rem;
+}
+.titleAtikUretimi hr{
+    width: 80vw;
+}
+.contentOfIt{
+    margin-left: 3rem;
+}
+.topmenu{
+    margin-left: 2rem;
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(17, 157, 115);
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: white;
+    width: 5rem;
+}
+
+@media (max-width: 850px){
+    .atikUretimiMain a{
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 0.2rem;
+        
+    }
+    .atikUretimiMain div{
+        display: flex;
+        flex-direction: column;
+    }
+    .titleAtikUretimi h1{
+        font-size: 1.2rem;
+
+    }
+    .contentOfIt{
+        font-size: 0.7rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+
+}

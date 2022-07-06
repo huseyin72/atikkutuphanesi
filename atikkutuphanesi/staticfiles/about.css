@@ -1,0 +1,55 @@
+
+
+  .aboutStitle{
+      display: flex;
+      justify-content: space-around;
+      color:rgb(83, 78, 78);
+    
+    }
+    .aboutStitle h1{
+        color:rgb(83, 78, 78);
+    }
+
+  .aboutlogo{
+    width: 30vw;
+    height: auto;
+
+  }
+  .contentAbout{
+    color:rgb(83, 78, 78);
+
+      padding: 1rem;
+      background-color: #F8F8F8;
+      display: flex;
+      justify-content: center;
+      margin: 3rem 10rem;
+  }
+  .titleAbout{
+      margin-top: 2rem;
+      font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      color:rgb(83, 78, 78);
+  }
+  .titleAbout h2{
+    color:rgb(83, 78, 78);
+
+  }
+  @media screen and (max-width:850px){
+    .aboutStitle h1{
+        font-size: 1.2rem;
+
+    }
+    .aboutlogo{
+        width: auto;
+        height: 1.4rem;
+
+    }
+    .contentAbout{
+        padding: 0.5rem;
+        margin: 1rem;
+        font-size: 0.9rem;
+        width: 90vw;
+    }
+    
+  }

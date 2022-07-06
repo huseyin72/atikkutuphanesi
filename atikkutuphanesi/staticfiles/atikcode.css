@@ -1,0 +1,469 @@
+/* .homeform{
+    overflow-x: hidden;
+
+}
+ 
+.atikcode{
+    font-size: 3rem;
+    color:rgb(48, 33, 33);
+    margin-left: 2rem;
+  
+    
+}
+.titlehomepage img{
+    width: 30vw;
+    height: auto;
+    
+
+
+}
+
+
+.formDiv h5{
+    color:rgb(29, 27, 27);
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+.titlehomepage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+.formDiv{
+    flex: 5;
+    min-height:100vh ;
+
+    border-radius: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+    
+}
+.gridButtonPart{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.button_click{
+    height: 5rem;
+    width: 15rem;
+    padding: 0.8rem;
+    margin: 1.5rem 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F5F5F5;
+    font-size: 1.2rem;
+    
+
+}
+.button_click:hover{
+    
+    
+    font-size: 1.4rem;
+}
+
+
+#form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    justify-content: space-around;
+}
+#form #button1{
+    
+    padding: 5px;
+    width: auto;
+    min-height: 6rem;
+ 
+    border-radius: 1rem;
+    cursor:pointer;
+    font-size: 1.2rem;
+    
+}
+#button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0.8;
+   
+}
+#form #button1:hover{
+    background-color: #fff;
+    font-size: 1.3rem;
+    color:rgb(255, 255, 255);
+}
+.buttonWithDrop{
+    cursor: default;
+}
+
+.button-main{
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 1rem;
+}
+.block{
+    
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border:3px solid #F5F5F5;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
+    position: absolute;
+    top:6rem;
+    z-index: 11;
+    background-color: #F5F5F5;
+    display: none
+    ;
+}
+.block a{
+    margin: 3px;
+    width: 80%;
+    padding: 3px;
+    color: black;  
+    
+}
+.block a:hover{
+    color: #eecb05;
+}
+.button-main:hover .block{
+    display: flex;
+}
+
+ 
+
+.dropselect{
+    width: 90%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    color: rgb(15, 13, 13);
+}
+
+
+
+
+#part3{
+    display: flex;
+    
+    
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.aOnIndex{
+    border: 2px solid green;
+    width: 15%;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+
+
+
+
+.containerMain{
+    overflow-x: hidden;
+
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.dropPart{
+
+    overflow-x: hidden;
+    
+    flex: 25;
+    
+    margin-left: 1rem;
+    min-height: 100vh;
+    min-width: 100vw;
+    
+   
+    
+   
+}
+.dropTitle{
+    display: flex;
+    justify-content: center;
+}
+.dropTitle h3{
+    margin-top: 1rem;
+    color:rgb(29, 27, 27);
+    font-size: 1.6rem;
+
+    
+}
+
+
+.codes{
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+}
+.codeUl{
+    list-style-type: circle;
+}
+.lastCodes{
+    background-color: #F0F0F0;
+    width: 80%;
+}
+.codeUl li{
+    
+   
+    padding: 0.2rem;
+    margin: 0.3rem;
+    width: 70%;
+
+}
+
+.codeUl li a{
+    color: black;
+    
+    
+
+}
+.codeUl li a:hover{
+    text-decoration: underline;
+
+}
+.dropMiddle{
+    padding: 0;
+}
+
+
+.part3-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+}
+.part3-container a{
+    width: 10rem;
+    height: 7rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:850px){
+    form{
+        
+        width: 70vw;
+        height: 40vh;
+    }
+
+}
+
+ */
+ .containerMain{
+     min-height: 100vh;
+     min-width: 100vw;
+     padding: 2rem;
+
+ }
+.dropPart{
+    width: 90vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dropTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.dropTitle h3{
+    font-size: 2.2rem;
+}
+.dropMiddle{
+    display: flex;
+    flex-direction: column;
+}
+.dropMiddle .dropselect{
+    margin-bottom: 1rem;
+    width: 80vw;
+    height: 1.5rem;
+}
+.codeUl{
+    width: 70vw;
+    background-color: whitesmoke;
+    padding: 0.3rem;
+
+}
+.codeUl li a{
+    color: salmon;
+}
+.codeUl li a:hover{
+    color: blue;
+}
+
+/* button part burası  */
+.formDiv{
+    min-height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formDiv-div{
+    display: flex;
+    align-items: center;
+}
+.formDiv-div h3{
+    font-size: 2.2rem;
+    flex: 1;
+
+}
+.gridButtonPart{
+    flex: 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.gridButtonPart a{
+    height: 5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    color: white;
+    border-radius: 0.4rem;
+    opacity: 0.8;
+    
+}
+.gridButtonPart a:hover{
+  font-size: 1.2rem;
+
+}
+
+/* atık türü sayfası  */
+#part3{
+    min-height: 100vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    
+}
+.part3-title{
+    flex: 1;
+}
+.part3-title h3 {
+    font-size: 2.2rem;
+    
+
+
+}
+.part3-buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex: 2;
+   
+
+}
+.part3-buttons a{
+    border: 1px solid black;
+    margin: 1rem;
+    width: 12rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: white;
+    border-radius: 0.3rem;
+
+}
+
+@media (max-width: 850px) { 
+    .containerMain h3{
+        font-size: 1rem;
+        
+    }
+    /* button parts responsive  */
+    .formDiv-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .gridButtonPart{
+        
+        grid-template-columns:  auto auto;
+
+   
+       
+    }
+    .gridButtonPart a{
+        height: 3rem;
+        margin: 0.5rem;
+        
+        padding: 0.1rem;
+        font-size: 0.5rem;
+        
+        
+        
+    }
+
+    /* son part  */
+    #part3{
+
+       
+        
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    
+    .part3-buttons{
+        
+        grid-template-columns:  auto auto;
+        flex: 5;
+       
+    
+    }
+    .part3-buttons a{
+        
+        margin: 0.5rem;
+        width: 6rem;
+        height: 2rem;
+        font-size: 0.5rem;
+
+        
+       
+        border-radius: 0.3rem;
+    
+    }
+    .part3-title{
+        margin-top: 3rem;
+        height: 2rem;
+        flex: 1;
+    }
+   
+}
