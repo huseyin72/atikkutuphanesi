@@ -638,7 +638,7 @@ function changeFunc(index){
                         let newLi = document.createElement("li");
                         let newA = document.createElement("a");
                         newA.innerHTML = element;
-                        newA.setAttribute("href",`http://127.0.0.1:8000/atikkod/${selectId[select1.value][select2.value][index]}`)
+                        newA.setAttribute("href",`https:www.atikkutuphanesi.com/atikkod/${selectId[select1.value][select2.value][index]}`)
                         newLi.appendChild(newA);
                         newHr = document.createElement("hr");
                         

@@ -2,7 +2,7 @@
 /* const navDrop = document.querySelector(".navDrop"); */
 /* const li1 = document.querySelector(".li1"); */
 var atikList = ["Atık pil ve akü" , "Atık yağ",  "Ambalaj atıkları", "Atık lastik" , "Tehlikeli atık" , "Biyobozunur atık" , "Bitkisel atık yağ" , "Atık elektrikli elektronik aletler" , "Tıbbi atık"];
-var atikhref = ["/atiklist#atikpil","/atiklist#atikyag","/sectionpart/atiklist.html#ambalajatik","/sectionpart/atiklist.html#yağatik","/sectionpart/atiklist.html#pilatik","/sectionpart/atiklist.html#elektronikatik","/sectionpart/atiklist.html#bitkiselatik","/sectionpart/atiklist.html#biyobozunuratik","http://127.0.0.1:8000/atiklist/tibbiatik"]
+var atikhref = ["https:www.atikkutuphanesi.com/atiklist/atikpil","https:www.atikkutuphanesi.com/atiklist/atikyağ","https:www.atikkutuphanesi.com/atiklist/ambalajatik","https:www.atikkutuphanesi.com/atiklist/atiklastik","https:www.atikkutuphanesi.com/atiklist/tehlikeliatik","https:www.atikkutuphanesi.com/atiklist/biyobozunuratik","https:www.atikkutuphanesi.com/atiklist/bitkiselatik","https:www.atikkutuphanesi.com/atiklist/atikelektrik","http:www.atikkutuphanesi.com/atiklist/tibbiatik"]
 const ul = document.querySelector(".associate");
 const clickable = document.querySelector(".clickable");
 
