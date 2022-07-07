@@ -1,3 +1,4 @@
+
 from pickle import TRUE
 from django.db import models
 
@@ -43,7 +44,7 @@ class Atikcodes2(models.Model):
     flammability = models.CharField(max_length=10,null=True, help_text="0-5 arası bir değerle puanlandırın",default="")
     howReduce =models.TextField(max_length=700,null=TRUE,help_text="Bu atık nasıl kaynağında azaltılabilir?",default="")
     howAccumulate =models.TextField(max_length=700,null=TRUE,help_text="Bu atık nasıl kaynağında azaltılabilir?",default="")
-    secondImage = models.ImageField(null=TRUE,default="")
+    secondImage = models.ImageField(null=TRUE,default="",)
     warningMessage = models.TextField(max_length=700,null=TRUE,help_text="uyarı mesajı(1)",default="")
     warningMessage2 = models.TextField(max_length=700,null=TRUE,help_text="uyarı mesajı(2)",default="")
     file1 = models.FileField(null=TRUE,help_text="Bu atık; atık tesisine nasıl taşınmalıdır ?",default="")
